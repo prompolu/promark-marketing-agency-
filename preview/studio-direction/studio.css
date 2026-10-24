@@ -60,3 +60,6 @@ footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-under
  .client-film figcaption>span{ justify-self:start; }
 }
 .process .step{ display:block;width:auto;height:auto;padding:0;text-align:left;line-height:1; }
+/* Project work leads; each client remains credited once in the project label. */
+.studio-project h3.studio-project-title{font-size:clamp(30px,3.1vw,44px);line-height:1.15;letter-spacing:-.04em;color:var(--foreground);margin:24px 0 20px}
+@media(max-width:760px){.studio-project h3.studio-project-title{font-size:34px}}
