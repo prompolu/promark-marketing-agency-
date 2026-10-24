@@ -33,13 +33,13 @@ test('Production build emits unique, indexable pages and complete, matching site
   build('https://agency.example');
   const files=[];
   async function crawl(dir){for(const entry of await readdir(dir,{withFileTypes:true})){const p=join(dir,entry.name);if(entry.isDirectory())await crawl(p);else if(entry.name==='index.html')files.push(p);}}
-  await crawl(join(directory,'dist'));assert.equal(files.length,8);
+  await crawl(join(directory,'dist'));assert.equal(files.length,12);
   const sitemap=await readFile(join(directory,'dist/sitemap.xml'),'utf8');const titles=new Set();
   for(const file of files){const html=await readFile(file,'utf8');assert.equal((html.match(/<h1[ >]/g)||[]).length,1);const title=html.match(/<title>(.*?)<\/title>/)[1];assert(!titles.has(title));titles.add(title);
    const canonical=html.match(/rel="canonical" href="([^"]+)"/)[1];assert(canonical.startsWith('https://agency.example/'));assert(sitemap.includes(`<loc>${canonical}</loc>`));assert(html.includes('content="index,follow,max-image-preview:large"'));assert(html.includes('property="og:image"'));JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/)[1]);
    if(file.includes('/realisations/')&&!file.endsWith('/realisations/index.html')){assert(html.includes('Travail réalisé')||html.includes('travail réalisé'));assert(html.includes('<video controls'));assert(html.includes('Fil d’Ariane'));}
   }
-  assert.equal((sitemap.match(/<loc>/g)||[]).length,8);
+  assert.equal((sitemap.match(/<loc>/g)||[]).length,12);
   const home=await readFile(join(directory,'dist/index.html'),'utf8');assert(home.includes('href="/realisations/prompolu-web/"'));assert(home.includes('agence de marketing et de création à Fès'));assert(home.includes('fetchpriority="high"'));
   const errorPage=await readFile(join(directory,'dist/404.html'),'utf8');assert(errorPage.includes('noindex,follow'));
   const robots=await readFile(join(directory,'dist/robots.txt'),'utf8');assert(robots.includes('Allow: /'));assert(!robots.includes('Disallow: /'));
@@ -57,11 +57,12 @@ test('Default build uses the confirmed domain while the packaged preview stays n
   const environment={...process.env};delete environment.SITE_URL;
   execFileSync(process.execPath,[join(directory,'scripts/build.mjs')],{env:environment,stdio:'pipe'});
   const html=await readFile(join(directory,'dist/index.html'),'utf8');
-  assert.equal(siteConfig.origin,'https://promarketing.com');
-  assert(html.includes('rel="canonical" href="https://promarketing.com/"'));
+  assert.equal(siteConfig.origin,'https://prompolu.github.io');
+  assert.equal(siteConfig.basePath,'/promark-marketing-agency-');
+  assert(html.includes('rel="canonical" href="https://prompolu.github.io/promark-marketing-agency-/"'));
   assert(html.includes('content="index,follow,max-image-preview:large"'));
   const sitemap=await readFile(join(directory,'dist/sitemap.xml'),'utf8');
-  assert.equal((sitemap.match(/<loc>https:\/\/promarketing.com\//g)||[]).length,8);
+  assert.equal((sitemap.match(/<loc>https:\/\/prompolu.github.io\/promark-marketing-agency-\//g)||[]).length,12);
   execFileSync('python',[join(directory,'scripts/package-preview.py')],{stdio:'pipe'});
   execFileSync('python',['-c',`import zipfile
 with zipfile.ZipFile('${directory}/preview/PROMARK-preview.zip') as z:
@@ -92,7 +93,7 @@ test('GitHub project-site build prefixes local links, assets, posters and SEO UR
   const project=await readFile(join(directory,'dist/realisations/prompolu-web/index.html'),'utf8');
   assert(project.includes('poster="/agency/media/prompolu-site.jpg"'));
   const sitemap=await readFile(join(directory,'dist/sitemap.xml'),'utf8');
-  assert.equal((sitemap.match(/<loc>https:\/\/agency.example\/agency\//g)||[]).length,8);
+  assert.equal((sitemap.match(/<loc>https:\/\/agency.example\/agency\//g)||[]).length,12);
   const error=await readFile(join(directory,'dist/404.html'),'utf8');assert(error.includes('href="/agency/"'));
  }finally{await rm(directory,{recursive:true,force:true});}
 });

@@ -6,9 +6,9 @@ See [deployment verification](docs/GITHUB-PAGES-DEPLOYMENT.md) for the published
 
 [Download the interactive preview](https://github.com/prompolu/promark-marketing-agency-/raw/refs/heads/promark-preview/preview/PROMARK-preview.zip)
 
-Extract the ZIP, then open `PROMARK-preview/index.html`. It includes eight French pages, real case studies and client videos. The form prepares an email draft in the visitor’s mail app, with a downloadable fallback. The website is now published on GitHub Pages; the ZIP remains an offline preview.
+Extract the ZIP, then open `PROMARK-preview/index.html`. It includes twelve French pages, real case studies and client videos. The contact form uses the owner-provided Formspree endpoint, with email, WhatsApp and download alternatives. The website is now published on GitHub Pages; the ZIP remains an offline preview.
 
-French, responsive agency website. Eight static pages generated with Node.js; no application dependencies or external tracking.
+French, responsive agency website. Twelve static pages generated with Node.js; no application dependencies or external tracking.
 
 ## Develop
 
@@ -38,8 +38,8 @@ The site uses a black theme: background **#000000**, surfaces **#101110**, foreg
 
 ## Launch requirements
 
-1. The user-selected production origin is **https://promarketing.com**, saved in `scripts/site-config.mjs`. Normal builds generate matching canonical URLs, social metadata, structured data and an eight-page sitemap. `SITE_URL` can override the origin; setting it to an empty string creates a noindex build without production URLs. DNS, HTTPS and deployment still require verification before launch.
-2. Public contact details are configured in `scripts/site-config.mjs`: `marketingagencypromark@gmail.com`, `+212684681567`, and `https://wa.me/212684681567`. Email, phone and WhatsApp links appear on the Contact page and footer; Organization/ContactPoint data uses the same source. The form validates input and opens an email draft; the visitor must send it from their own mail app. Downloading a local draft remains a fallback. A server-side email service is still required for automatic in-page submission and delivery/error confirmation; no credentials are supplied or embedded.
+1. The public production origin is **https://prompolu.github.io/promark-marketing-agency-/**. The user does not own `promarketing.com`; that domain is no longer the default and must not be attached without confirmed ownership. `SITE_URL` overrides the origin and `SITE_BASE_PATH` overrides the path. Explicit `SITE_URL=` builds a noindex domainless preview.
+2. Public contacts and the owner-provided Formspree endpoint are configured in `scripts/site-config.mjs`. Direct submission sends to `https://formspree.io/f/xbgglkeg`; it never claims success before provider acceptance. `CONTACT_FORM_ENDPOINT` can override it, and an empty value restores the clearly labelled email-draft fallback. The public endpoint is not a secret. No test email was sent; verify actual delivery in the owner’s Formspree account before relying on inbox receipt.
 3. Confirm the exact lime HEX or provide the original colour asset for sampling if exact colour matching is required. No other logo modification is needed.
 
 The portfolio presents real client work supplied by the user: Prompolu (website, SEO, GEO and motion design) and Saraprocmaroc (animated video). Case studies describe the confirmed scope without invented performance results. The Prompolu website poster comes from the supplied site-launch video. The About-page typography is an own-brand Promark signature, not a client project. No unverified social links or legal claims are included.
@@ -84,7 +84,7 @@ npm run check
 npm test
 ```
 
-The default domain is `https://promarketing.com`, as selected by the user. `SITE_URL= npm run build` produces a domainless noindex preview. Offline ZIPs always remain noindex, disallow crawling and omit the production sitemap. With a confirmed origin, the build generates matching canonicals/sitemap, Organization/WebSite/page/breadcrumb metadata and absolute social-preview URLs. No local placeholders are included in the published preview.
+The default origin/path match the live GitHub Pages site. The user confirmed the proposed .com domain is not owned. `SITE_URL= npm run build` produces a domainless noindex preview. Offline ZIPs always remain noindex, disallow crawling and omit the production sitemap. With a confirmed origin, the build generates matching canonicals/sitemap, Organization/WebSite/page/breadcrumb metadata and absolute social-preview URLs. No local placeholders are included in the published preview.
 
 Use `npm run preview:package` after building to refresh the offline ZIP. It rewrites page/media links for local use and remains noindex. The local development server supports normalising index/slash URLs and security headers; equivalent deployment-host settings still need to be verified after launch.
 
@@ -98,6 +98,12 @@ https://prompolu.github.io/promark-marketing-agency-/
 
 Run `npm run deploy:github` from this checkout. It checks syntax and tests, builds with `SITE_URL=https://prompolu.github.io` and `SITE_BASE_PATH=/promark-marketing-agency-`, and pushes only the generated site (including `.nojekyll`) to `gh-pages`. It uses an isolated temporary Git index and does not switch source branches or publish repository/audit files. Existing Pages history is retained; no force push is used. A git push alone is not proof that the Pages build succeeded—verify the Pages status and public URL after each deployment.
 
-Configure GitHub Pages to publish from branch `gh-pages`, folder `/`. The custom domain is deliberately not attached while `promarketing.com` serves a sale page. The default custom-domain build setting remains available for a later, verified domain transition. Pages-build SEO URLs use the actual GitHub Pages address instead. GitHub controls the host's headers, redirects, caching, root-domain robots policy, and TLS; the Node development server's custom headers do not apply there.
+Configure GitHub Pages to publish from branch `gh-pages`, folder `/`. No custom domain is attached. The default build now uses the live GitHub Pages address; an owned domain can be configured later through the explicit build variables. Pages-build SEO URLs use the actual GitHub Pages address instead. GitHub controls the host's headers, redirects, caching, root-domain robots policy, and TLS; the Node development server's custom headers do not apply there.
 
-Root-relative links, local media sources and poster URLs are prefixed at build time for project-site deployments. The eight sitemap/canonical/structured-data URLs and social images use the same destination. Offline ZIP packaging remains a separate custom-domain preview flow; do not package a prefixed Pages build as an offline preview.
+Root-relative links, local media sources and poster URLs are prefixed at build time for project-site deployments. The twelve sitemap/canonical/structured-data URLs and social images use the same destination. Offline ZIP packaging removes any configured project prefix from local asset/page/poster/srcset URLs and always remains noindex.
+
+## Latest improvements
+
+See [rollout notes](docs/improvements/ROLLOUT.md) for the twelve-page release, form-service configuration, responsive media, tests and outstanding owner information. `scripts/services.mjs` contains unique service-page content; `scripts/contact.mjs` renders the form; `public/contact.js` handles its interaction. `scripts/projects.mjs` contains project records and evidence-based descriptions.
+
+Optional owner-supplied Search Console and Bing verification values can be provided with `GOOGLE_SITE_VERIFICATION` and `BING_SITE_VERIFICATION` at build/deploy time. No verification value or analytics account is currently configured. Do not add fictitious testimonials, personal biographies or performance claims to fill missing owner information.

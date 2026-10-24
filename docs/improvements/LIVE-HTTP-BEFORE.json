@@ -1,0 +1,83 @@
+[
+  {
+    "route": "/",
+    "run": 1,
+    "status": 200,
+    "ttfb_s": 0.476554,
+    "total_s": 0.484737,
+    "download_bytes": 19789,
+    "tls_verified": true
+  },
+  {
+    "route": "/",
+    "run": 2,
+    "status": 200,
+    "ttfb_s": 0.390063,
+    "total_s": 0.400149,
+    "download_bytes": 19789,
+    "tls_verified": true
+  },
+  {
+    "route": "/",
+    "run": 3,
+    "status": 200,
+    "ttfb_s": 0.174265,
+    "total_s": 0.180015,
+    "download_bytes": 19789,
+    "tls_verified": true
+  },
+  {
+    "route": "/services/",
+    "run": 1,
+    "status": 200,
+    "ttfb_s": 0.382319,
+    "total_s": 0.386654,
+    "download_bytes": 16180,
+    "tls_verified": true
+  },
+  {
+    "route": "/services/",
+    "run": 2,
+    "status": 200,
+    "ttfb_s": 0.278148,
+    "total_s": 0.285222,
+    "download_bytes": 16180,
+    "tls_verified": true
+  },
+  {
+    "route": "/services/",
+    "run": 3,
+    "status": 200,
+    "ttfb_s": 0.338524,
+    "total_s": 0.343264,
+    "download_bytes": 16180,
+    "tls_verified": true
+  },
+  {
+    "route": "/contact/",
+    "run": 1,
+    "status": 200,
+    "ttfb_s": 0.248498,
+    "total_s": 0.252778,
+    "download_bytes": 14238,
+    "tls_verified": true
+  },
+  {
+    "route": "/contact/",
+    "run": 2,
+    "status": 200,
+    "ttfb_s": 0.393857,
+    "total_s": 0.400016,
+    "download_bytes": 14238,
+    "tls_verified": true
+  },
+  {
+    "route": "/contact/",
+    "run": 3,
+    "status": 200,
+    "ttfb_s": 0.245175,
+    "total_s": 0.251474,
+    "download_bytes": 14238,
+    "tls_verified": true
+  }
+]

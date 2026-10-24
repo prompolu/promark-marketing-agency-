@@ -24,22 +24,24 @@ export const projectTitles={
  'saraproc-motion':'Vidéo animée pour Saraprocmaroc | Promark'
 };
 export function pageMetadata(slug,fallbackTitle,fallbackDescription){return metadata[slug]||[projectTitles[slug.split('/').at(-1)]||`${fallbackTitle} | Promark`,fallbackDescription];}
-export function seoHead({origin,slug,title,description,project}){
+export function seoHead({origin,slug,title,description,project,service}){
  const canonical=origin?`${origin}/${slug?slug+'/':''}`:'';
  const imagePath=project?`/media/${project.poster}.jpg`:'/social/cover.jpg';
  const imageAlt=project?project.alt:'Promark, agence marketing et créative à Fès — présentation du site.';
  const tags=`<meta name="robots" content="${origin?'index,follow,max-image-preview:large':'noindex,follow'}"><meta property="og:site_name" content="Promark"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(title)}"><meta name="twitter:description" content="${escapeHTML(description)}">`;
  if(!origin)return tags;
- const organization={'@type':'Organization','@id':`${origin}/#organization`,name:'Promark',url:origin+'/',email:contactConfig.email,telephone:contactConfig.phone,contactPoint:{'@type':'ContactPoint',contactType:'customer enquiries',email:contactConfig.email,telephone:contactConfig.phone,url:contactConfig.whatsapp},description:'Agence de marketing et de création basée à Fès, au Maroc.',location:{'@type':'Place',name:'Fès, Maroc',address:{'@type':'PostalAddress',addressLocality:'Fès',addressCountry:'MA'}}};
+ const organization={'@type':'Organization','@id':`${origin}/#organization`,name:'Promark',url:origin+'/',logo:origin+'/logo.svg',email:contactConfig.email,telephone:contactConfig.phone,contactPoint:{'@type':'ContactPoint',contactType:'customer enquiries',email:contactConfig.email,telephone:contactConfig.phone,url:contactConfig.whatsapp},description:'Agence de marketing et de création basée à Fès, au Maroc.',location:{'@type':'Place',name:'Fès, Maroc',address:{'@type':'PostalAddress',addressLocality:'Fès',addressCountry:'MA'}}};
  const website={'@type':'WebSite','@id':`${origin}/#website`,url:origin+'/',name:'Promark',inLanguage:'fr-MA',publisher:{'@id':organization['@id']}};
  const page={'@type':slug==='contact'?'ContactPage':slug==='a-propos'?'AboutPage':slug==='realisations'?'CollectionPage':'WebPage','@id':canonical+'#webpage',url:canonical,name:title,description,inLanguage:'fr-MA',isPartOf:{'@id':website['@id']},publisher:{'@id':organization['@id']}};
  const graph=[organization,website,page];
  if(slug){
   const items=[{'@type':'ListItem',position:1,name:'Accueil',item:origin+'/'}];
+  if(service)items.push({'@type':'ListItem',position:2,name:'Services',item:origin+'/services/'});
   if(project)items.push({'@type':'ListItem',position:2,name:'Réalisations',item:origin+'/realisations/'});
-  items.push({'@type':'ListItem',position:items.length+1,name:project?`${project.client} — ${project.title}`:title.split('|')[0].trim(),item:canonical});
+  items.push({'@type':'ListItem',position:items.length+1,name:project?`${project.client} — ${project.title}`:service?service.name:title.split('|')[0].trim(),item:canonical});
   const breadcrumb={'@type':'BreadcrumbList','@id':canonical+'#breadcrumb',itemListElement:items};graph.push(breadcrumb);page.breadcrumb={'@id':breadcrumb['@id']};
  }
+ if(service){page.mainEntity={'@type':'Service','@id':canonical+'#service',name:service.name,description:service.summary,provider:{'@id':organization['@id']},areaServed:{'@type':'Country',name:'Maroc'}};}
  if(project){page.mainEntity={'@type':'CreativeWork',name:`${project.client} — ${project.title}`,description:project.delivery,creator:{'@id':organization['@id']},about:{'@type':'Organization',name:project.client,...(project.website?{url:project.website}:{})}};}
  const json=JSON.stringify({'@context':'https://schema.org','@graph':graph}).replaceAll('<','\\u003c');
  return tags+`<link rel="canonical" href="${escapeHTML(canonical)}"><meta property="og:url" content="${escapeHTML(canonical)}"><meta property="og:image" content="${origin}${imagePath}"><meta property="og:image:width" content="${project?'1280':'1200'}"><meta property="og:image:height" content="${project?'720':'630'}"><meta property="og:image:alt" content="${escapeHTML(imageAlt)}"><meta name="twitter:image" content="${origin}${imagePath}"><meta name="twitter:image:alt" content="${escapeHTML(imageAlt)}"><script type="application/ld+json">${json}</script>`;

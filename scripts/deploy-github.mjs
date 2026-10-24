@@ -1,3 +1,4 @@
+import {serviceDetails} from './services.mjs';
 // Publish only the generated static build. No custom domain is attached.
 import {execFileSync} from 'node:child_process';
 import {mkdtemp,rm,writeFile} from 'node:fs/promises';
@@ -21,7 +22,7 @@ try{
  git([worktree,'add','--all','--force']);
  const tree=git(['write-tree']).trim();
  const files=git(['ls-tree','-r','--name-only',tree]).trim().split('\n');
- if(!files.includes('index.html')||!files.includes('.nojekyll')||files.includes('package.json')||files.filter(f=>f.endsWith('index.html')).length!==8)throw new Error('Static deployment tree failed validation.');
+ if(!files.includes('index.html')||!files.includes('.nojekyll')||files.includes('package.json')||files.filter(f=>f.endsWith('index.html')).length!==8+serviceDetails.length)throw new Error('Static deployment tree failed validation.');
  const args=['-c','user.name=Codex','-c','user.email=codex@openai.com','commit-tree',tree];
  if(parent)args.push('-p',parent);
  args.push('-m','Deploy Promark static website to GitHub Pages');

@@ -1,7 +1,31 @@
-"""Bundle built pages with relative links for a local, offline browser preview."""
+"""Bundle built pages with relative URLs for a local browser preview."""
 from pathlib import Path
-import re, posixpath, zipfile
+import re
+import posixpath
+import zipfile
+from urllib.parse import urlsplit, urlunsplit
+
 source = Path(__file__).resolve().parent.parent / 'dist'
+base_path = ''
+try:
+    canonical = re.search(r'rel="canonical" href="([^"]+)"', (source / 'index.html').read_text())
+    if canonical:
+        base_path = urlsplit(canonical.group(1)).path.rstrip('/')
+except OSError:
+    pass
+
+def relative_url(url, directory):
+    if not url.startswith('/') or url.startswith('//'):
+        return url
+    parts = urlsplit(url)
+    path = parts.path
+    if base_path and (path == base_path or path.startswith(base_path + '/')):
+        path = path[len(base_path):] or '/'
+    target = path.lstrip('/')
+    if not target or target.endswith('/'):
+        target += 'index.html'
+    return urlunsplit(('', '', posixpath.relpath(target, directory), parts.query, parts.fragment))
+
 output = source.parent / 'preview' / 'PROMARK-preview.zip'
 output.parent.mkdir(exist_ok=True)
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
@@ -14,23 +38,19 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
         data = file.read_bytes()
         if file.suffix == '.html':
             directory = relative.parent.as_posix()
-            def rewrite(match):
-                attribute, url = match.groups()
-                if not url.startswith('/') or url.startswith('//'):
-                    return match.group(0)
-                path, separator, query = url.partition('?')
-                path, hash_separator, fragment = path.partition('#')
-                target = path.lstrip('/')
-                if not target or target.endswith('/'):
-                    target += 'index.html'
-                target = posixpath.relpath(target, directory)
-                return f'{attribute}="{target}{hash_separator}{fragment}{separator}{query}"'
-            html = re.sub(r'(href|src)="([^"]*)"', rewrite, data.decode())
-            html = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex,follow">', html)
-            data = html.encode()
-        elif relative.as_posix() == 'app.js':
-            data = data.decode().replace("new URL('contact/',assetRoot)", "new URL('contact/index.html',assetRoot)").replace('`realisations/${p.id}/`','`realisations/${p.id}/index.html`').encode()
+            content = re.sub(r'(href|src|poster)="([^"]*)"', lambda m: f'{m[1]}="{relative_url(m[2], directory)}"', data.decode())
+            def rewrite_srcset(match):
+                variants = []
+                for item in match[1].split(','):
+                    url, descriptor = item.strip().split()
+                    variants.append(relative_url(url, directory) + ' ' + descriptor)
+                return 'srcset="' + ', '.join(variants) + '"'
+            content = re.sub(r'srcset="([^"]+)"', rewrite_srcset, content)
+            content = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex,follow">', content)
+            data = content.encode()
+        elif relative.as_posix() in ('app.js', 'contact.js'):
+            data = data.decode().replace("new URL('contact/',assetRoot)", "new URL('contact/index.html',assetRoot)").replace('`realisations/${p.id}/`', '`realisations/${p.id}/index.html`').encode()
         archive.writestr(str(Path('PROMARK-preview') / relative), data)
     archive.writestr('PROMARK-preview/robots.txt', 'User-agent: *\nDisallow: /\n')
-    archive.writestr('PROMARK-preview/OPEN-ME.txt', 'Unzip the complete archive, then open index.html in your browser. Keep the media folder with the pages. Videos play on request and include sound controls. The contact form opens your email app or downloads a local draft. Send the email yourself; no automatic delivery is configured. Nothing is deployed publicly.\n')
+    archive.writestr('PROMARK-preview/OPEN-ME.txt', 'Extract the whole archive and open index.html. Keep the media folder with the pages. Videos play on request. Without a configured form endpoint, the form prepares an email draft or a downloadable request. A configured Formspree endpoint needs an internet connection. No message is sent automatically by opening this preview.\n')
 print(f'Built {output} ({output.stat().st_size / 1_000_000:.1f} MB)')
