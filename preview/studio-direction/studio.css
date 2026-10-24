@@ -99,3 +99,4 @@ footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-under
  .project-actions .inline-link{justify-self:start;}
  #dialog-content>.button{justify-self:stretch;justify-content:center;}
 }
+@media(max-width:760px){.studio-feature h2{font-size:clamp(36px,10vw,48px)}}
