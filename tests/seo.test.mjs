@@ -40,7 +40,7 @@ test('Production build emits unique, indexable pages and complete, matching site
    if(file.includes('/realisations/')&&!file.endsWith('/realisations/index.html')){assert(html.includes('Travail réalisé')||html.includes('travail réalisé'));assert(html.includes('<video controls'));assert(html.includes('Fil d’Ariane'));}
   }
   assert.equal((sitemap.match(/<loc>/g)||[]).length,12);
-  const home=await readFile(join(directory,'dist/index.html'),'utf8');assert(home.includes('href="/realisations/prompolu-web/"'));assert(home.includes('agence de marketing et de création à Fès'));assert(home.includes('role="switch"'));assert(!home.includes('loading="eager"')); // Hero is CSS geometry; project media remains lazy.
+  const home=await readFile(join(directory,'dist/index.html'),'utf8');assert(home.includes('href="/realisations/"'));assert(home.includes('agence de marketing et de création à Fès'));assert(home.includes('role="switch"'));assert(!home.includes('loading="eager"')); // Hero is CSS geometry; project media remains lazy.
   const errorPage=await readFile(join(directory,'dist/404.html'),'utf8');assert(errorPage.includes('noindex,follow'));
   const robots=await readFile(join(directory,'dist/robots.txt'),'utf8');assert(robots.includes('Allow: /'));assert(!robots.includes('Disallow: /'));
   build('');await assert.rejects(readFile(join(directory,'dist/sitemap.xml')));
@@ -88,7 +88,9 @@ test('GitHub project-site build prefixes local links, assets, posters and SEO UR
   assert(home.includes('href="https://agency.example/agency/"'));
   assert.match(home,/src="\/agency\/app\.js\?v=[a-f0-9]{12}"/);
   assert(home.includes('href="/agency/contact/"'));
-  assert(home.includes('href="/agency/realisations/prompolu-web/"'));
+  assert(home.includes('href="/agency/realisations/"'));
+  const portfolio=await readFile(join(directory,'dist/realisations/index.html'),'utf8');
+  assert(portfolio.includes('href="/agency/realisations/prompolu-web/"'));
   assert(!/(href|src|poster)="\/(?!agency\/|\/)/.test(home));
   const project=await readFile(join(directory,'dist/realisations/prompolu-web/index.html'),'utf8');
   assert(project.includes('poster="/agency/media/prompolu-site.jpg"'));
