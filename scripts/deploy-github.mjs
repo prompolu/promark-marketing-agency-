@@ -1,9 +1,11 @@
+import {existsSync} from 'node:fs';
 import {serviceDetails} from './services.mjs';
 // Publish only the generated static build. No custom domain is attached.
 import {execFileSync} from 'node:child_process';
 import {mkdtemp,rm,writeFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
+if(existsSync(new URL('../.preview-only',import.meta.url)))throw new Error('Preview-only branch: production publishing is blocked until the user approves. Use publish-review.mjs for the isolated review folder.');
 const repository=resolve(new URL('..',import.meta.url).pathname);
 const run=(command,args,options={})=>execFileSync(command,args,{cwd:repository,encoding:'utf8',...options});
 run('npm',['run','check'],{stdio:'inherit'});

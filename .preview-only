@@ -1,0 +1,2 @@
+This branch is a review build. Do not publish its changes to the production root before the user's approval.
+Use scripts/publish-review.mjs to publish only the isolated preview/reactive-v2/ directory while preserving all production files.

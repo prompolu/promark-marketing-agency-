@@ -1,12 +1,13 @@
 """Bundle built pages with relative URLs for a local browser preview."""
 from pathlib import Path
 import re
+import os
 import posixpath
 import zipfile
 from urllib.parse import urlsplit, urlunsplit
 
 source = Path(__file__).resolve().parent.parent / 'dist'
-base_path = ''
+base_path = os.environ.get('SITE_BASE_PATH', '').rstrip('/')
 try:
     canonical = re.search(r'rel="canonical" href="([^"]+)"', (source / 'index.html').read_text())
     if canonical:
@@ -26,7 +27,10 @@ def relative_url(url, directory):
         target += 'index.html'
     return urlunsplit(('', '', posixpath.relpath(target, directory), parts.query, parts.fragment))
 
-output = source.parent / 'preview' / 'PROMARK-preview.zip'
+archive_name = os.environ.get('PREVIEW_ARCHIVE_NAME', 'PROMARK-preview.zip')
+if Path(archive_name).name != archive_name or not archive_name.endswith('.zip'):
+    raise ValueError('Preview archive name must be a ZIP filename, without directories.')
+output = source.parent / 'preview' / archive_name
 output.parent.mkdir(exist_ok=True)
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
     for file in source.rglob('*'):
@@ -48,7 +52,7 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
             content = re.sub(r'srcset="([^"]+)"', rewrite_srcset, content)
             content = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex,follow">', content)
             data = content.encode()
-        elif relative.as_posix() in ('app.js', 'contact.js'):
+        elif relative.as_posix() in ('app.js', 'contact.js', 'effects.js'):
             data = data.decode().replace("new URL('contact/',assetRoot)", "new URL('contact/index.html',assetRoot)").replace('`realisations/${p.id}/`', '`realisations/${p.id}/index.html`').encode()
         archive.writestr(str(Path('PROMARK-preview') / relative), data)
     archive.writestr('PROMARK-preview/robots.txt', 'User-agent: *\nDisallow: /\n')
