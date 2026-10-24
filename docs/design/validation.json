@@ -1,0 +1,10 @@
+{
+  "pages": 12,
+  "viewports": 4,
+  "combinations": 48,
+  "errors": [],
+  "contactDialog": true,
+  "menuFocus": true,
+  "reducedMotion": true,
+  "projectDialog": true
+}

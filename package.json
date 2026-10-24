@@ -7,7 +7,7 @@
     "build": "node scripts/build.mjs",
     "dev": "node scripts/server.mjs",
     "start": "node scripts/server.mjs",
-    "check": "node --check scripts/build.mjs && node --check scripts/server.mjs && node --check public/app.js && node --check scripts/seo.mjs && node --check scripts/projects.mjs && node --check scripts/site-config.mjs && node --check scripts/deploy-github.mjs && node --check public/contact.js && node --check scripts/contact.mjs && node --check scripts/services.mjs && node --check public/effects.js && node --check scripts/brand-scene.mjs && node --check scripts/mockups.mjs && node --check scripts/publish-review.mjs",
+    "check": "node --check scripts/build.mjs && node --check scripts/server.mjs && node --check public/app.js && node --check scripts/seo.mjs && node --check scripts/projects.mjs && node --check scripts/site-config.mjs && node --check scripts/deploy-github.mjs && node --check public/contact.js && node --check scripts/contact.mjs && node --check scripts/services.mjs && node --check public/effects.js && node --check scripts/brand-scene.mjs && node --check scripts/mockups.mjs && node --check scripts/publish-review.mjs && node --check public/studio.js && node --check scripts/studio-home.mjs",
     "test": "node --test",
     "preview:package": "python scripts/package-preview.py",
     "deploy:github": "node scripts/deploy-github.mjs",

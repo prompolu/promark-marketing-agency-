@@ -5,7 +5,7 @@ import {existsSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 const root=resolve(new URL('..',import.meta.url).pathname);
-const folder='preview/reactive-v2';
+const folder='preview/studio-direction';
 const prefix='/promark-marketing-agency-/'+folder;
 const run=(command,args,options={})=>execFileSync(command,args,{cwd:root,encoding:'utf8',...options});
 if(!existsSync(join(root,'.preview-only')))throw new Error('Review publishing requires the .preview-only branch marker.');
@@ -40,9 +40,9 @@ try{
  const after=git(['ls-tree','-r',tree]).trim().split('\n');
  const outside=lines=>lines.filter(line=>!line.split('\t')[1].startsWith(folder+'/'));
  if(JSON.stringify(outside(original))!==JSON.stringify(outside(after)))throw new Error('Production preservation check failed; refusing publication.');
- const commit=git(['-c','user.name=Codex','-c','user.email=codex@openai.com','commit-tree',tree,'-p',parent,'-m','Add isolated reactive 3D review; preserve production bytes']).trim();
+ const commit=git(['-c','user.name=Codex','-c','user.email=codex@openai.com','commit-tree',tree,'-p',parent,'-m','Add studio direction review; preserve production bytes']).trim();
  git(['push','origin',`${commit}:refs/heads/gh-pages`]);
  const evidence={preview_url:'https://prompolu.github.io'+prefix+'/',parent,commit,folder,published_files:published.length,production_files_preserved:outside(original).length,all_production_files_byte_identical:true};
- await writeFile(join(root,'preview/review-publication.json'),JSON.stringify(evidence,null,2)+'\n');
+ await writeFile(join(root,'preview/studio-direction-publication.json'),JSON.stringify(evidence,null,2)+'\n');
  console.log(JSON.stringify(evidence));
 }finally{await rm(temporary,{recursive:true,force:true});}

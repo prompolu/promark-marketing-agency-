@@ -1,29 +1,29 @@
-name: Design reference inspection
+name: Live site performance audit
 on:
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  inspect:
+  lighthouse:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Install isolated browser tooling
-        run: npm install --prefix /tmp/reference-tools --no-save --ignore-scripts --no-audit --no-fund puppeteer-core@25.16.0
-      - name: Inspect the public design reference
+      - name: Measure the live mobile site
+        env:
+          SITE_TO_AUDIT: https://prompolu.github.io/promark-marketing-agency-/
         run: |
+          mkdir -p reports
           export CHROME_PATH="$(command -v google-chrome)"
-          node tools/inspect-reference.cjs
-      - uses: actions/upload-artifact@v4
+          npx --yes lighthouse@13.5.0 "$SITE_TO_AUDIT" --chrome-flags="--headless=new --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --form-factor=mobile --output=json --output=html --output-path=reports/lighthouse --quiet
+      - name: Retain the measured reports
         if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: dopamine-reference-inspection
-          path: reference-report/
+          name: promark-mobile-lighthouse
+          path: reports/
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 30
