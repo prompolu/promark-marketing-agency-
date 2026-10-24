@@ -34,7 +34,7 @@ The site uses a black theme: background **#000000**, surfaces **#101110**, foreg
 
 ## Launch requirements
 
-1. Confirm the production origin. Set `SITE_URL` to the confirmed HTTPS origin at build time to generate canonical URLs, social URL metadata and `sitemap.xml`. Without it, these are deliberately omitted and preview builds are marked noindex and blocked in robots.txt. The value must be a full HTTPS origin; do not set it to a placeholder domain. Rebuilding without a domain removes an earlier generated sitemap.
+1. The user-selected production origin is **https://promarketing.com**, saved in `scripts/site-config.mjs`. Normal builds generate matching canonical URLs, social metadata, structured data and an eight-page sitemap. `SITE_URL` can override the origin; setting it to an empty string creates a noindex build without production URLs. DNS, HTTPS and deployment still require verification before launch.
 2. Supply an approved submission destination/service. There are no supplied contact credentials or verified address/number. The form currently validates and downloads a local text draft, explicitly stating that it has not been sent. No requests or personal data are transmitted. Integrate a real backend and verified delivery/error states before enabling submissions; keep service secrets on the server.
 3. Confirm the exact lime HEX or provide the original colour asset for sampling if exact colour matching is required. No other logo modification is needed.
 
@@ -75,11 +75,11 @@ Case studies have permanent, server-rendered URLs and crawlable project links. J
 Confirmed-domain production build:
 
 ```sh
-SITE_URL=https://YOUR-CONFIRMED-DOMAIN npm run build
+npm run build
 npm run check
 npm test
 ```
 
-Replace the example shell value with the actual owned domain; the domain is not yet confirmed. Domainless builds and offline ZIPs are noindex previews. With a confirmed origin, the build generates matching canonicals/sitemap, Organization/WebSite/page/breadcrumb metadata and absolute social-preview URLs. No local placeholders are included in the published preview.
+The default domain is `https://promarketing.com`, as selected by the user. `SITE_URL= npm run build` produces a domainless noindex preview. Offline ZIPs always remain noindex, disallow crawling and omit the production sitemap. With a confirmed origin, the build generates matching canonicals/sitemap, Organization/WebSite/page/breadcrumb metadata and absolute social-preview URLs. No local placeholders are included in the published preview.
 
 Use `npm run preview:package` after building to refresh the offline ZIP. It rewrites page/media links for local use and remains noindex. The local development server supports normalising index/slash URLs and security headers; equivalent deployment-host settings still need to be verified after launch.

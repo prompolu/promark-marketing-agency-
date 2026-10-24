@@ -4,6 +4,7 @@ import {mkdtemp,cp,readFile,readdir,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
+import {siteConfig} from '../scripts/site-config.mjs';
 import {productionOrigin,seoHead} from '../scripts/seo.mjs';
 
 test('Production URLs require a full HTTPS origin',()=>{
@@ -42,5 +43,28 @@ test('Production build emits unique, indexable pages and complete, matching site
   build('');await assert.rejects(readFile(join(directory,'dist/sitemap.xml')));
   assert((await readFile(join(directory,'dist/index.html'),'utf8')).includes('content="noindex,follow"'));
   assert((await readFile(join(directory,'dist/robots.txt'),'utf8')).includes('Disallow: /'));
+ }finally{await rm(directory,{recursive:true,force:true});}
+});
+
+test('Default build uses the confirmed domain while the packaged preview stays noindex',async()=>{
+ const directory=await mkdtemp(join(tmpdir(),'promark-domain-'));
+ try{
+  await cp(new URL('../scripts',import.meta.url),join(directory,'scripts'),{recursive:true});
+  await cp(new URL('../public',import.meta.url),join(directory,'public'),{recursive:true});
+  const environment={...process.env};delete environment.SITE_URL;
+  execFileSync(process.execPath,[join(directory,'scripts/build.mjs')],{env:environment,stdio:'pipe'});
+  const html=await readFile(join(directory,'dist/index.html'),'utf8');
+  assert.equal(siteConfig.origin,'https://promarketing.com');
+  assert(html.includes('rel="canonical" href="https://promarketing.com/"'));
+  assert(html.includes('content="index,follow,max-image-preview:large"'));
+  const sitemap=await readFile(join(directory,'dist/sitemap.xml'),'utf8');
+  assert.equal((sitemap.match(/<loc>https:\/\/promarketing.com\//g)||[]).length,8);
+  execFileSync('python',[join(directory,'scripts/package-preview.py')],{stdio:'pipe'});
+  execFileSync('python',['-c',`import zipfile
+with zipfile.ZipFile('${directory}/preview/PROMARK-preview.zip') as z:
+ assert b'content="noindex,follow"' in z.read('PROMARK-preview/index.html')
+ assert b'Disallow: /' in z.read('PROMARK-preview/robots.txt')
+ assert 'PROMARK-preview/sitemap.xml' not in z.namelist()
+`],{stdio:'pipe'});
  }finally{await rm(directory,{recursive:true,force:true});}
 });

@@ -4,7 +4,7 @@
 
 - `npm run build`: generates eight French pages, three static case studies, crawler directives and assets.
 - `npm run check`: syntax checks for the build, local server, browser interaction code, metadata module and project data.
-- `npm test`: three dependency-free tests. Covers production-origin validation and rejection of ambiguous/unsafe values; structured-data/content encoding; isolated production and preview builds with eight unique titles, one H1 per page, matching canonicals/sitemap, structured data, social tags, static case content and preview noindex/stale-sitemap removal.
+- `npm test`: four dependency-free tests. Covers production-origin validation and rejection of ambiguous/unsafe values; structured-data/content encoding; isolated production and preview builds with eight unique titles, one H1 per page, matching canonicals/sitemap, structured data, social tags, static case content and preview noindex/stale-sitemap removal.
 
 The production integration test uses `https://agency.example` in a temporary directory and deletes that directory afterward. This reserved test origin is never saved as the production domain or distributed in the preview.
 
@@ -17,3 +17,5 @@ The server redirects `/index.html` and slashless directory URLs to the slash URL
 ## Limits
 
 No public deployment, Search Console/CrUX access, actual indexing checks, rich-result validation service or live AI visibility test has been performed. No Lighthouse or Core Web Vitals score is claimed. Structured data is checked as generated JSON and against expected properties, not certified by a third-party validator. See GEO-ANALYSIS.md for domain and launch requirements.
+
+The fourth test checks default metadata and all eight sitemap URLs against the user-selected `https://promarketing.com` origin, plus noindex/robots/sitemap safeguards in the offline ZIP. This is a generated-file test, not a live deployment check.

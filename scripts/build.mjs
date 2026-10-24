@@ -1,10 +1,11 @@
+import {siteConfig} from './site-config.mjs';
 import {productionOrigin, pageMetadata, seoHead, escapeHTML} from './seo.mjs';
 import {projects} from './projects.mjs';
 import {mkdir, writeFile, cp, access, rm} from 'node:fs/promises';
 const out = new URL('../dist/', import.meta.url);
 await mkdir(out, {recursive:true});
 await cp(new URL('../public/', import.meta.url), out, {recursive:true});
-const domain = productionOrigin(process.env.SITE_URL);
+const domain = productionOrigin(process.env.SITE_URL ?? siteConfig.origin);
 let hasLogo = false;
 try { await access(new URL('../public/logo.svg',import.meta.url)); hasLogo = true; } catch {}
 const logo = hasLogo ? '<span class="logo-frame"><img class="logo" src="/logo.svg" alt="Promark" width="1536" height="1024"></span>' : '<span class="logo-slot" aria-label="Emplacement du logo original Promark"><span class="logo-symbol" aria-hidden="true">↗</span><span>AGENCE CRÉATIVE<br>FÈS, MAROC</span></span>';

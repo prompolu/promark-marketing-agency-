@@ -22,7 +22,7 @@ The production robots policy uses `User-agent: *` and `Allow: /`:
 
 Training-policy signals are separate: GPTBot, ClaudeBot, Google-Extended, CCBot and Applebot-Extended have no added restrictions under the generic production policy. Their status is not evidence of search citations. No training-policy preference has been changed for a live website.
 
-The current build has no confirmed production origin. It is intentionally `noindex,follow` with `Disallow: /` in robots.txt, and omits canonical URLs and sitemap entries. The offline ZIP is also noindex. This prevents claiming an unknown or placeholder domain as production. The generated production policy was tested using a reserved `.example` origin exclusively in an isolated temporary test build. Live crawler responses, WAF treatment, indexing and citations remain untested until deployment.
+The user selected `https://promarketing.com` as the production origin. Normal builds now emit indexable pages with matching canonical URLs, structured-data identifiers, social-preview URLs and an eight-page sitemap. Setting `SITE_URL` to an empty string still creates a domainless noindex build. Offline ZIPs are always noindex, disallow crawling and omit the production sitemap. The domain is configured in code; DNS, ownership, TLS, deployment, live crawler responses, indexing and citations have not been independently verified.
 
 ## Remaining signals
 
@@ -34,7 +34,7 @@ The current build has no confirmed production origin. It is intentionally `noind
 
 ## Launch actions
 
-1. Supply the complete owned production domain; `.com` alone is insufficient. Build with `SITE_URL=https://<confirmed-domain>` to generate matching canonicals, sitemap, social URLs and structured data. Publish only the production `dist/` build, not the offline ZIP.
+1. Verify ownership and DNS for the user-selected `promarketing.com` domain, then confirm HTTPS on the intended host. `npm run build` generates production URLs for this origin. Publish only the production `dist/` build, not the offline ZIP.
 2. Deploy only after explicit authorisation. Ensure the static host preserves 404 status and HTTPS; the Node development server's redirect/security headers do not automatically configure another host.
 3. Configure the real contact destination before enabling submissions.
 4. Once live, verify robots/sitemap/canonicals/structured data on the actual host, then submit through the owner's Search Console/Bing tools when available. Measure field CWV and actual search/AI visibility separately.
