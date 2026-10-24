@@ -1,0 +1,224 @@
+{
+  "summary": {
+    "health_score": 88,
+    "score_scope": "Limited local implementation checklist, not live-domain SEO health. Performance weight excluded and remaining 90% renormalized.",
+    "business_type": "Marketing and creative agency based in Fès, Morocco",
+    "audited_commit": "c72e0763c5ee72066150edb7bc793ca5849030e8",
+    "audit_date": "2026-10-24",
+    "live_status": "Configured domain leads to GoDaddy for-sale page; new site not deployed there.",
+    "top_findings": [
+      "Configured domain is a sale/parking destination",
+      "Case studies lack first-hand detail",
+      "Native form fallback conflicts with security policy",
+      "Enquiry submission depends on the visitor’s mail app",
+      "Services and practitioner detail are limited"
+    ],
+    "quick_wins": [
+      "Enrich case-specific decisions",
+      "Resolve native form/CSP conflict",
+      "Enlarge secondary hit areas",
+      "Connect original logo metadata if eligible",
+      "Verify deployment and actual indexing"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 92.3,
+      "weight": 22,
+      "passed": 12,
+      "checks": 13,
+      "what_works": [
+        "12/13 scoped local checklist items passed; see findings/technical.md"
+      ],
+      "findings": [
+        {
+          "id": "D-01",
+          "title": "Configured domain is a sale/parking destination",
+          "severity": "Critical",
+          "description": "Authenticated HTTPS fetch of promarketing.com returned a 114-byte JavaScript redirect to /lander. Following /lander reached a GoDaddy domain-for-sale page. The PROMARK build is not deployed there. This is not proof about who owns the domain.",
+          "recommendation": "Verify ownership and DNS access, or choose a domain you control. Do not claim the build is live or submit its sitemap at this domain until the correct website is served."
+        },
+        {
+          "id": "T-01",
+          "title": "Native form fallback conflicts with security policy",
+          "severity": "Medium",
+          "description": "With JavaScript disabled, Chromium blocks the form’s mailto submission because the Node server sets CSP form-action to self. Reproduced without sending email; direct email links remain usable.",
+          "recommendation": "Permit the intended mailto action in the serving policy, or use a non-submitting email/WhatsApp fallback. Recheck with JavaScript disabled."
+        },
+        {
+          "id": "X-01",
+          "title": "Enquiry submission depends on the visitor’s mail app",
+          "severity": "Medium",
+          "description": "The form prepares an email draft and cannot confirm delivery. It is clearly labelled, and email, phone and WhatsApp alternatives are real. This is a conversion limitation, not an indexing penalty.",
+          "recommendation": "If reliable in-page submission is required, configure a server-side mail service with validation, accessible error handling and verified success states."
+        },
+        {
+          "id": "A-01",
+          "title": "Sites connector tools unavailable",
+          "severity": "Info",
+          "description": "The user tagged Sites, but the active tool catalog exposed no callable Sites tools or matching app capabilities.",
+          "recommendation": "Reconnect or enable Sites for this conversation if further work must use that app; do not invent a publication or connector result."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 70.0,
+      "weight": 23,
+      "passed": 7,
+      "checks": 10,
+      "what_works": [
+        "7/10 scoped local checklist items passed; see findings/content.md"
+      ],
+      "findings": [
+        {
+          "id": "C-01",
+          "title": "Case studies lack first-hand detail",
+          "severity": "High",
+          "description": "Three real cases show client assets and state the objective/deliverables, but do not explain actual SEO/GEO tasks, creative decisions, constraints or validation. Main text is approximately 126–189 words per case; length itself is not the failure.",
+          "recommendation": "Add the genuine client brief, your role, specific decisions and delivered changes. Use approved before/after evidence and verified outcomes only."
+        },
+        {
+          "id": "C-02",
+          "title": "Services and practitioner detail are limited",
+          "severity": "Medium",
+          "description": "The Services page covers four services on one URL. About explains values/location, with limited approved who/how detail. No SERP mismatch was demonstrated.",
+          "recommendation": "Enrich the most important service with decision-useful examples and scope. Add a truthful practitioner introduction. Create separate service pages only after intent research and enough distinct material."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 100.0,
+      "weight": 20,
+      "passed": 7,
+      "checks": 7,
+      "what_works": [
+        "7/7 scoped local checklist items passed; see findings/on-page.md"
+      ],
+      "findings": []
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 100.0,
+      "weight": 10,
+      "passed": 7,
+      "checks": 7,
+      "what_works": [
+        "7/7 scoped local checklist items passed; see findings/schema.md"
+      ],
+      "findings": [
+        {
+          "id": "S-01",
+          "title": "Original logo is absent from the Organization graph",
+          "severity": "Low",
+          "description": "The SVG is rendered in the site but is not referenced as Organization.logo. No JSON-LD parsing failure was found.",
+          "recommendation": "Connect a suitable, accessible original-logo image after checking actual-host requirements. Do not redraw the logo."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness — local only",
+      "score": 80.0,
+      "weight": 10,
+      "passed": 4,
+      "checks": 5,
+      "what_works": [
+        "4/5 scoped local checklist items passed; see findings/geo.md"
+      ],
+      "findings": []
+    },
+    {
+      "name": "Images",
+      "score": 100.0,
+      "weight": 5,
+      "passed": 7,
+      "checks": 7,
+      "what_works": [
+        "7/7 scoped local checklist items passed; see findings/images.md"
+      ],
+      "findings": [
+        {
+          "id": "I-01",
+          "title": "No responsive raster variants",
+          "severity": "Low",
+          "description": "Posters are already compact at about 27–84kB, but mobile cards use the same 1280px landscape files.",
+          "recommendation": "Consider smaller srcset variants and efficient formats where actual savings justify maintenance."
+        }
+      ]
+    },
+    {
+      "name": "Performance (field CWV)",
+      "score": null,
+      "weight": 10,
+      "what_works": [
+        "Local unthrottled lab observations are recorded separately."
+      ],
+      "findings": [
+        {
+          "title": "Field performance not measured",
+          "severity": "Info",
+          "description": "No real-user production data or Lighthouse score available.",
+          "recommendation": "Measure after verified deployment."
+        },
+        {
+          "id": "V-01",
+          "title": "Small secondary link hit areas",
+          "severity": "Medium",
+          "description": "Some mobile footer link boxes are 16–22px tall. Spacing and inline exceptions have not been fully evaluated; this is not a declared WCAG failure.",
+          "recommendation": "Increase padding/hit area of footer and breadcrumb links; preserve spacing and visible focus states."
+        },
+        {
+          "id": "P-01",
+          "title": "Production performance and search outcomes unmeasured",
+          "severity": "Info",
+          "description": "No deployed PROMARK host, CrUX/GSC access, Lighthouse installation or measured AI citations were available. Local lab timings do not establish field CWV.",
+          "recommendation": "After deployment, measure mobile field CWV, indexing, rich-result eligibility and search/AI visibility; record a baseline."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "1. Resolve launch blocker",
+        "timeframe": "Before deployment",
+        "items": [
+          "Verify an owned domain and its DNS/hosting access.",
+          "Serve the correct production build over HTTPS.",
+          "Retest live canonicals, robots, sitemap and redirects before requesting indexing."
+        ]
+      },
+      {
+        "name": "2. Improve reliability and evidence",
+        "timeframe": "Next implementation pass",
+        "items": [
+          "Resolve the native form/CSP conflict.",
+          "Choose whether to implement server-side enquiry delivery.",
+          "Add real case-specific process details and approved practitioner information."
+        ]
+      },
+      {
+        "name": "3. Refine and measure",
+        "timeframe": "After launch",
+        "items": [
+          "Improve secondary touch targets; optionally connect the logo graph and responsive images.",
+          "Verify rich-result eligibility, crawl/index coverage and field CWV.",
+          "Research service search intent and measure actual search/AI visibility."
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  },
+  "limits": [
+    "No live PROMARK indexation or authority score",
+    "No field CWV or INP measurement",
+    "No Lighthouse Agentic X/N fraction",
+    "No external schema validator certification",
+    "No measured AI-platform citation scores"
+  ]
+}

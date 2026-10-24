@@ -1,0 +1,17 @@
+{
+  "url": "https://promarketing.com/lander",
+  "exit": 0,
+  "status": "200",
+  "final_url": "https://forsale.godaddy.com/forsale/promarketing.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+  "title": [
+    "promarketing.com is for sale \u2014 Get a price in 24 hours | GoDaddy"
+  ],
+  "bytes": 244247,
+  "parking_signals": {
+    "domain.*sale": true,
+    "afternic": true,
+    "godaddy": true,
+    "parking": false,
+    "promark": true
+  }
+}

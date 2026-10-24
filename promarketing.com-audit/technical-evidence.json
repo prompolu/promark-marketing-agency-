@@ -1,0 +1,1312 @@
+{
+  "scope": "local production-mode build only",
+  "base": "http://127.0.0.1:3040",
+  "pages": {
+    "/": {
+      "depth": 0,
+      "status": 200,
+      "bytes": 18541,
+      "title": "Agence marketing à Fès : web & motion design | Promark",
+      "title_length": 54,
+      "description": "Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.",
+      "description_length": 152,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/",
+      "h1": [
+        "Votre marque mérite d’être remarquée."
+      ],
+      "headings": [
+        [
+          "h1",
+          "Votre marque mérite d’être remarquée."
+        ],
+        [
+          "h2",
+          "Contenu, web et motion design.Vos idées prennent forme."
+        ],
+        [
+          "h3",
+          "Création de contenu& vidéos"
+        ],
+        [
+          "h3",
+          "Réseauxsociaux"
+        ],
+        [
+          "h3",
+          "Sites web& landing pages"
+        ],
+        [
+          "h3",
+          "Graphisme& motion design"
+        ],
+        [
+          "h2",
+          "Une idée se raconte.Une marque se voit."
+        ],
+        [
+          "h2",
+          "Du premier échangeà la mise en ligne."
+        ],
+        [
+          "h3",
+          "Échange & diagnostic"
+        ],
+        [
+          "h3",
+          "Direction créative"
+        ],
+        [
+          "h3",
+          "Création & validation"
+        ],
+        [
+          "h3",
+          "Mise en ligne & suivi"
+        ],
+        [
+          "h2",
+          "De l’attention.À chaque détail."
+        ],
+        [
+          "h2",
+          "Avant dese lancer."
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 656,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "src": "/media/prompolu-motion.jpg",
+          "alt": "Signature Prompolu Aluminium dans le film de présentation.",
+          "width": "1280",
+          "height": "720",
+          "loading": "eager",
+          "fetchpriority": "high"
+        },
+        {
+          "src": "/media/prompolu-site.jpg",
+          "alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client.",
+          "width": "1280",
+          "height": "720",
+          "loading": "lazy"
+        },
+        {
+          "src": "/media/saraproc-film.jpg",
+          "alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu.",
+          "width": "1280",
+          "height": "720",
+          "loading": "lazy"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Agence marketing à Fès : web & motion design | Promark",
+        "og:description": "Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Agence marketing à Fès : web & motion design | Promark",
+        "twitter:description": "Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.",
+        "og:url": "https://promarketing.com/",
+        "og:image": "https://promarketing.com/social/cover.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Promark, agence marketing et créative à Fès — présentation du site.",
+        "twitter:image": "https://promarketing.com/social/cover.jpg",
+        "twitter:image:alt": "Promark, agence marketing et créative à Fès — présentation du site."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/contact/",
+        "/services/",
+        "/realisations/prompolu-motion/",
+        "/realisations/",
+        "/services/",
+        "/services/#contenu",
+        "/services/#social",
+        "/services/#web",
+        "/services/#motion",
+        "/realisations/",
+        "/realisations/prompolu-web/",
+        "/realisations/saraproc-motion/",
+        "/a-propos/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "18541",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/services/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 15106,
+      "title": "Contenu, sites web & motion design à Fès | Promark",
+      "title_length": 50,
+      "description": "Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.",
+      "description_length": 148,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/services/",
+      "h1": [
+        "Du sens dans les idées.Du soin dans la création."
+      ],
+      "headings": [
+        [
+          "h1",
+          "Du sens dans les idées.Du soin dans la création."
+        ],
+        [
+          "h2",
+          "Création de contenu& vidéos"
+        ],
+        [
+          "h3",
+          "Ce que nous pouvons créer ensemble"
+        ],
+        [
+          "h2",
+          "Réseauxsociaux"
+        ],
+        [
+          "h3",
+          "Ce que nous pouvons créer ensemble"
+        ],
+        [
+          "h2",
+          "Sites web& landing pages"
+        ],
+        [
+          "h3",
+          "Ce que nous pouvons créer ensemble"
+        ],
+        [
+          "h2",
+          "Graphisme& motion design"
+        ],
+        [
+          "h3",
+          "Ce que nous pouvons créer ensemble"
+        ],
+        [
+          "h2",
+          "SEO et GEO :de quoi parle-t-on ?"
+        ],
+        [
+          "h3",
+          "Qu’est-ce que le SEO ?"
+        ],
+        [
+          "h3",
+          "Qu’est-ce que le GEO ?"
+        ],
+        [
+          "h2",
+          "Du premier échangeà la mise en ligne."
+        ],
+        [
+          "h3",
+          "Échange & diagnostic"
+        ],
+        [
+          "h3",
+          "Direction créative"
+        ],
+        [
+          "h3",
+          "Création & validation"
+        ],
+        [
+          "h3",
+          "Mise en ligne & suivi"
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 643,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Contenu, sites web & motion design à Fès | Promark",
+        "og:description": "Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Contenu, sites web & motion design à Fès | Promark",
+        "twitter:description": "Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.",
+        "og:url": "https://promarketing.com/services/",
+        "og:image": "https://promarketing.com/social/cover.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Promark, agence marketing et créative à Fès — présentation du site.",
+        "twitter:image": "https://promarketing.com/social/cover.jpg",
+        "twitter:image:alt": "Promark, agence marketing et créative à Fès — présentation du site."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/contact/?service=contenu",
+        "/contact/?service=social",
+        "/contact/?service=web",
+        "/contact/?service=motion",
+        "/realisations/prompolu-web/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "15106",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/realisations/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 12456,
+      "title": "Réalisations : Prompolu & Saraprocmaroc | Promark",
+      "title_length": 49,
+      "description": "Découvrez nos projets pour Prompolu et Saraprocmaroc : création de site web, accompagnement SEO et GEO, films produits et vidéos animées.",
+      "description_length": 137,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/realisations/",
+      "h1": [
+        "Des idées quiprennent forme."
+      ],
+      "headings": [
+        [
+          "h1",
+          "Des idées quiprennent forme."
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 176,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "src": "/media/prompolu-site.jpg",
+          "alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client.",
+          "width": "1280",
+          "height": "720",
+          "loading": "lazy"
+        },
+        {
+          "src": "/media/prompolu-motion.jpg",
+          "alt": "Signature Prompolu Aluminium dans le film de présentation.",
+          "width": "1280",
+          "height": "720",
+          "loading": "lazy"
+        },
+        {
+          "src": "/media/saraproc-film.jpg",
+          "alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu.",
+          "width": "1280",
+          "height": "720",
+          "loading": "lazy"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Découvrez nos projets pour Prompolu et Saraprocmaroc : création de site web, accompagnement SEO et GEO, films produits et vidéos animées.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Réalisations : Prompolu & Saraprocmaroc | Promark",
+        "og:description": "Découvrez nos projets pour Prompolu et Saraprocmaroc : création de site web, accompagnement SEO et GEO, films produits et vidéos animées.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Réalisations : Prompolu & Saraprocmaroc | Promark",
+        "twitter:description": "Découvrez nos projets pour Prompolu et Saraprocmaroc : création de site web, accompagnement SEO et GEO, films produits et vidéos animées.",
+        "og:url": "https://promarketing.com/realisations/",
+        "og:image": "https://promarketing.com/social/cover.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Promark, agence marketing et créative à Fès — présentation du site.",
+        "twitter:image": "https://promarketing.com/social/cover.jpg",
+        "twitter:image:alt": "Promark, agence marketing et créative à Fès — présentation du site."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/realisations/prompolu-web/",
+        "/realisations/prompolu-motion/",
+        "/realisations/saraproc-motion/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "12456",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/a-propos/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 11785,
+      "title": "Promark, agence créative basée à Fès au Maroc",
+      "title_length": 45,
+      "description": "Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.",
+      "description_length": 155,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/a-propos/",
+      "h1": [
+        "Ancrés à Fès.Ouverts à vos idées."
+      ],
+      "headings": [
+        [
+          "h1",
+          "Ancrés à Fès.Ouverts à vos idées."
+        ],
+        [
+          "h2",
+          "Une marque fortecommence parun message clair."
+        ],
+        [
+          "h2",
+          "Du premier échangeà la mise en ligne."
+        ],
+        [
+          "h3",
+          "Échange & diagnostic"
+        ],
+        [
+          "h3",
+          "Direction créative"
+        ],
+        [
+          "h3",
+          "Création & validation"
+        ],
+        [
+          "h3",
+          "Mise en ligne & suivi"
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 299,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Promark, agence créative basée à Fès au Maroc",
+        "og:description": "Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Promark, agence créative basée à Fès au Maroc",
+        "twitter:description": "Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.",
+        "og:url": "https://promarketing.com/a-propos/",
+        "og:image": "https://promarketing.com/social/cover.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Promark, agence marketing et créative à Fès — présentation du site.",
+        "twitter:image": "https://promarketing.com/social/cover.jpg",
+        "twitter:image:alt": "Promark, agence marketing et créative à Fès — présentation du site."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "11785",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/contact/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 13320,
+      "title": "Parlons de votre projet créatif à Fès | Promark",
+      "title_length": 47,
+      "description": "Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.",
+      "description_length": 153,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/contact/",
+      "h1": [
+        "Parlons devotre prochain projet."
+      ],
+      "headings": [
+        [
+          "h1",
+          "Parlons devotre prochain projet."
+        ],
+        [
+          "h2",
+          "Votre idée.Notre premièreconversation."
+        ]
+      ],
+      "visible_words": 247,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Parlons de votre projet créatif à Fès | Promark",
+        "og:description": "Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Parlons de votre projet créatif à Fès | Promark",
+        "twitter:description": "Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.",
+        "og:url": "https://promarketing.com/contact/",
+        "og:image": "https://promarketing.com/social/cover.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Promark, agence marketing et créative à Fès — présentation du site.",
+        "twitter:image": "https://promarketing.com/social/cover.jpg",
+        "twitter:image:alt": "Promark, agence marketing et créative à Fès — présentation du site."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "mailto:marketingagencypromark@gmail.com",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "13320",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/realisations/prompolu-motion/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 13687,
+      "title": "Motion design pour Prompolu : films produits | Promark",
+      "title_length": 54,
+      "description": "Motion design · Films produits pour Prompolu : Film de présentation, animation « Nos gammes » et deux déclinaisons verticales autour du S140RP.",
+      "description_length": 143,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/realisations/prompolu-motion/",
+      "h1": [
+        "Le produit prend la parole"
+      ],
+      "headings": [
+        [
+          "h1",
+          "Le produit prend la parole"
+        ],
+        [
+          "h2",
+          "Objectif du projet"
+        ],
+        [
+          "h2",
+          "Le travail réalisé par Promark"
+        ],
+        [
+          "h2",
+          "Les créations en vidéo"
+        ],
+        [
+          "h2",
+          "Découvrir un autre projet"
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 257,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Motion design · Films produits pour Prompolu : Film de présentation, animation « Nos gammes » et deux déclinaisons verticales autour du S140RP.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Motion design pour Prompolu : films produits | Promark",
+        "og:description": "Motion design · Films produits pour Prompolu : Film de présentation, animation « Nos gammes » et deux déclinaisons verticales autour du S140RP.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Motion design pour Prompolu : films produits | Promark",
+        "twitter:description": "Motion design · Films produits pour Prompolu : Film de présentation, animation « Nos gammes » et deux déclinaisons verticales autour du S140RP.",
+        "og:url": "https://promarketing.com/realisations/prompolu-motion/",
+        "og:image": "https://promarketing.com/media/prompolu-motion.jpg",
+        "og:image:width": "1280",
+        "og:image:height": "720",
+        "og:image:alt": "Signature Prompolu Aluminium dans le film de présentation.",
+        "twitter:image": "https://promarketing.com/media/prompolu-motion.jpg",
+        "twitter:image:alt": "Signature Prompolu Aluminium dans le film de présentation."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/",
+        "/realisations/",
+        "/media/prompolu-motion.mp4",
+        "/media/prompolu-motion.mp4",
+        "/media/prompolu-gammes.mp4",
+        "/media/prompolu-gammes.mp4",
+        "/media/prompolu-s140.mp4",
+        "/media/prompolu-s140.mp4",
+        "/media/prompolu-s140-variation.mp4",
+        "/media/prompolu-s140-variation.mp4",
+        "/realisations/prompolu-web/",
+        "/realisations/saraproc-motion/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "13687",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/realisations/prompolu-web/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 12260,
+      "title": "Prompolu : création de site web, SEO & GEO | Promark",
+      "title_length": 52,
+      "description": "Site web · SEO · GEO pour Prompolu : Création du site web, accompagnement SEO (référencement naturel) et GEO (optimisation pour les moteurs de réponse et les outils d’IA).",
+      "description_length": 171,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/realisations/prompolu-web/",
+      "h1": [
+        "Une présence digitale complète"
+      ],
+      "headings": [
+        [
+          "h1",
+          "Une présence digitale complète"
+        ],
+        [
+          "h2",
+          "Objectif du projet"
+        ],
+        [
+          "h2",
+          "Le travail réalisé par Promark"
+        ],
+        [
+          "h2",
+          "Le projet en vidéo"
+        ],
+        [
+          "h2",
+          "Découvrir un autre projet"
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 208,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Site web · SEO · GEO pour Prompolu : Création du site web, accompagnement SEO (référencement naturel) et GEO (optimisation pour les moteurs de réponse et les outils d’IA).",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Prompolu : création de site web, SEO & GEO | Promark",
+        "og:description": "Site web · SEO · GEO pour Prompolu : Création du site web, accompagnement SEO (référencement naturel) et GEO (optimisation pour les moteurs de réponse et les outils d’IA).",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Prompolu : création de site web, SEO & GEO | Promark",
+        "twitter:description": "Site web · SEO · GEO pour Prompolu : Création du site web, accompagnement SEO (référencement naturel) et GEO (optimisation pour les moteurs de réponse et les outils d’IA).",
+        "og:url": "https://promarketing.com/realisations/prompolu-web/",
+        "og:image": "https://promarketing.com/media/prompolu-site.jpg",
+        "og:image:width": "1280",
+        "og:image:height": "720",
+        "og:image:alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client.",
+        "twitter:image": "https://promarketing.com/media/prompolu-site.jpg",
+        "twitter:image:alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/",
+        "/realisations/",
+        "https://prompolu.com/",
+        "/media/prompolu-site.mp4",
+        "/media/prompolu-site.mp4",
+        "/realisations/prompolu-motion/",
+        "/realisations/saraproc-motion/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "12260",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    },
+    "/realisations/saraproc-motion/": {
+      "depth": 1,
+      "status": 200,
+      "bytes": 11715,
+      "title": "Vidéo animée pour Saraprocmaroc | Promark",
+      "title_length": 41,
+      "description": "Vidéo animée · Présentation produits pour Saraprocmaroc : Vidéo animée de 60 secondes avec musique et présentation des produits.",
+      "description_length": 128,
+      "robots": "index,follow,max-image-preview:large",
+      "canonical": "https://promarketing.com/realisations/saraproc-motion/",
+      "h1": [
+        "L’hygiène inspire la confiance"
+      ],
+      "headings": [
+        [
+          "h1",
+          "L’hygiène inspire la confiance"
+        ],
+        [
+          "h2",
+          "Objectif du projet"
+        ],
+        [
+          "h2",
+          "Le travail réalisé par Promark"
+        ],
+        [
+          "h2",
+          "Le projet en vidéo"
+        ],
+        [
+          "h2",
+          "Découvrir un autre projet"
+        ],
+        [
+          "h2",
+          "Votre prochainebonne idée commence ici."
+        ]
+      ],
+      "visible_words": 182,
+      "images": [
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        },
+        {
+          "class": "logo",
+          "src": "/logo.svg",
+          "alt": "Promark",
+          "width": "1536",
+          "height": "1024"
+        }
+      ],
+      "meta": {
+        "null": null,
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Vidéo animée · Présentation produits pour Saraprocmaroc : Vidéo animée de 60 secondes avec musique et présentation des produits.",
+        "theme-color": "#000000",
+        "og:type": "website",
+        "og:locale": "fr_MA",
+        "og:title": "Vidéo animée pour Saraprocmaroc | Promark",
+        "og:description": "Vidéo animée · Présentation produits pour Saraprocmaroc : Vidéo animée de 60 secondes avec musique et présentation des produits.",
+        "robots": "index,follow,max-image-preview:large",
+        "og:site_name": "Promark",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Vidéo animée pour Saraprocmaroc | Promark",
+        "twitter:description": "Vidéo animée · Présentation produits pour Saraprocmaroc : Vidéo animée de 60 secondes avec musique et présentation des produits.",
+        "og:url": "https://promarketing.com/realisations/saraproc-motion/",
+        "og:image": "https://promarketing.com/media/saraproc-film.jpg",
+        "og:image:width": "1280",
+        "og:image:height": "720",
+        "og:image:alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu.",
+        "twitter:image": "https://promarketing.com/media/saraproc-film.jpg",
+        "twitter:image:alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu."
+      },
+      "links": [
+        "#main",
+        "/",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/",
+        "/contact/",
+        "/",
+        "/realisations/",
+        "/media/saraproc-film.mp4",
+        "/media/saraproc-film.mp4",
+        "/realisations/prompolu-web/",
+        "/realisations/prompolu-motion/",
+        "/contact/",
+        "/",
+        "#main",
+        "mailto:marketingagencypromark@gmail.com",
+        "tel:+212684681567",
+        "https://wa.me/212684681567",
+        "/",
+        "/services/",
+        "/realisations/",
+        "/a-propos/",
+        "/contact/"
+      ],
+      "headers": {
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "11715",
+        "Date": "Sat, 24 Oct 2026 11:45:14 GMT",
+        "Connection": "close"
+      },
+      "lang": "fr"
+    }
+  },
+  "assets": {
+    "/style.css": {
+      "status": 200,
+      "bytes": 28832,
+      "type": "text/css; charset=utf-8"
+    },
+    "/app.js": {
+      "status": 200,
+      "bytes": 7914,
+      "type": "text/javascript; charset=utf-8"
+    },
+    "/logo.svg": {
+      "status": 200,
+      "bytes": 3402,
+      "type": "image/svg+xml"
+    },
+    "/media/prompolu-motion.jpg": {
+      "status": 200,
+      "bytes": 27433,
+      "type": "image/jpeg"
+    },
+    "/media/prompolu-site.jpg": {
+      "status": 200,
+      "bytes": 83939,
+      "type": "image/jpeg"
+    },
+    "/media/saraproc-film.jpg": {
+      "status": 200,
+      "bytes": 71479,
+      "type": "image/jpeg"
+    },
+    "/media/prompolu-motion.mp4": {
+      "status": 200,
+      "bytes": 1651321,
+      "type": "video/mp4"
+    },
+    "/media/prompolu-gammes.jpg": {
+      "status": 200,
+      "bytes": 48929,
+      "type": "image/jpeg"
+    },
+    "/media/prompolu-gammes.mp4": {
+      "status": 200,
+      "bytes": 875467,
+      "type": "video/mp4"
+    },
+    "/media/prompolu-s140.jpg": {
+      "status": 200,
+      "bytes": 42003,
+      "type": "image/jpeg"
+    },
+    "/media/prompolu-s140.mp4": {
+      "status": 200,
+      "bytes": 779259,
+      "type": "video/mp4"
+    },
+    "/media/prompolu-s140-variation.jpg": {
+      "status": 200,
+      "bytes": 41697,
+      "type": "image/jpeg"
+    },
+    "/media/prompolu-s140-variation.mp4": {
+      "status": 200,
+      "bytes": 786233,
+      "type": "video/mp4"
+    },
+    "/media/prompolu-site.mp4": {
+      "status": 200,
+      "bytes": 1387076,
+      "type": "video/mp4"
+    },
+    "/media/saraproc-film.mp4": {
+      "status": 200,
+      "bytes": 2845995,
+      "type": "video/mp4"
+    }
+  },
+  "broken_fragments": [],
+  "robots": {
+    "status": 200,
+    "body": "User-agent: *\nAllow: /\nSitemap: https://promarketing.com/sitemap.xml\n"
+  },
+  "sitemap": {
+    "status": 200,
+    "bytes": 606,
+    "urls": [
+      "https://promarketing.com/",
+      "https://promarketing.com/services/",
+      "https://promarketing.com/realisations/",
+      "https://promarketing.com/a-propos/",
+      "https://promarketing.com/contact/",
+      "https://promarketing.com/realisations/prompolu-web/",
+      "https://promarketing.com/realisations/prompolu-motion/",
+      "https://promarketing.com/realisations/saraproc-motion/"
+    ]
+  },
+  "media": [
+    {
+      "file": "public/social/cover.jpg",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "bytes": 69146,
+      "format": "JPEG"
+    },
+    {
+      "file": "public/media/prompolu-s140.jpg",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 42003,
+      "format": "JPEG"
+    },
+    {
+      "file": "public/media/prompolu-gammes.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 48929,
+      "format": "JPEG"
+    },
+    {
+      "file": "public/media/prompolu-motion.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 27433,
+      "format": "JPEG"
+    },
+    {
+      "file": "public/media/prompolu-s140-variation.jpg",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 41697,
+      "format": "JPEG"
+    },
+    {
+      "file": "public/media/saraproc-film.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 71479,
+      "format": "JPEG"
+    },
+    {
+      "file": "public/media/prompolu-site.jpg",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "bytes": 83939,
+      "format": "JPEG"
+    }
+  ],
+  "runtime_checks": [
+    {
+      "path": "/services",
+      "status": 308,
+      "location": "/services/",
+      "noindex": false,
+      "cache_control": null,
+      "compression": null,
+      "security_headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": null
+      }
+    },
+    {
+      "path": "/services/index.html?source=test",
+      "status": 308,
+      "location": "/services/?source=test",
+      "noindex": false,
+      "cache_control": null,
+      "compression": null,
+      "security_headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": null
+      }
+    },
+    {
+      "path": "/index.html",
+      "status": 308,
+      "location": "/",
+      "noindex": false,
+      "cache_control": null,
+      "compression": null,
+      "security_headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": null
+      }
+    },
+    {
+      "path": "/does-not-exist/",
+      "status": 404,
+      "location": null,
+      "noindex": true,
+      "cache_control": null,
+      "compression": null,
+      "security_headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": null
+      }
+    },
+    {
+      "path": "/404.html",
+      "status": 200,
+      "location": null,
+      "noindex": true,
+      "cache_control": null,
+      "compression": null,
+      "security_headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": null
+      }
+    },
+    {
+      "path": "/contact/?service=web",
+      "status": 200,
+      "location": null,
+      "noindex": false,
+      "cache_control": null,
+      "compression": null,
+      "security_headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": null
+      }
+    }
+  ],
+  "video_range": {
+    "status": 206,
+    "body_bytes": 1024,
+    "content_range": "bytes 0-1023/1651321"
+  }
+}

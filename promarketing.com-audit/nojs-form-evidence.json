@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:3040/contact/",
+  "messages": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "type": "error",
+      "text": "Sending form data to 'mailto:marketingagencypromark@gmail.com?body=name%3D%0D%0Acompany%3D%0D%0Aemail%3D%0D%0Aphone%3D%0D%0Aservice%3D%0D%0Adescription%3D%0D%0A%0D%0A' violates the following Content Security Policy directive: \"form-action 'self'\". The request has been blocked.\n"
+    }
+  ]
+}
