@@ -113,3 +113,5 @@ Optional owner-supplied Search Console and Bing verification values can be provi
 The homepage's brand object is actual six-face CSS3D with pointer tilt, native slider/keyboard rotation and reset. Scroll-entry effects are progressive, finite and disabled for reduced-motion users. There is no WebGL/Spline dependency, perpetual canvas loop, custom cursor or scroll hijacking. These are features of the Promark website; they do not advertise Wix/Spline work as agency services.
 
 An on-demand `Live site performance audit` GitHub Actions workflow measures the public mobile site with pinned Lighthouse13.5.0 and saves JSON/HTML artifacts. These are lab results; Google Search Console/CrUX indexing and field measurements still require the owner's account/eligible traffic.
+
+Latest live mobile Lighthouse (GitHub Actions run40133602643): **97 performance / 100 accessibility / 100 best practices / 100 SEO**, LCP1.6s, CLS0 and TBT170ms. See [measurement comparison](docs/improvements/LIGHTHOUSE-COMPARISON.json) and [latest JSON report](docs/improvements/lighthouse-after/report.json). These are synthetic lab results, not field measurements or ranking guarantees.

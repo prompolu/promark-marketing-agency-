@@ -1,0 +1,68 @@
+{
+  "url": "https://prompolu.github.io/promark-marketing-agency-/",
+  "method": "GitHub-hosted Lighthouse 13.5.0; mobile simulated lab run, not field CWV",
+  "before_run": 40094410536,
+  "after_run": 40133602643,
+  "before": {
+    "fetch_time_utc": "2026-10-24T12:33:59.615Z",
+    "scores": {
+      "performance": 73,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "display": "2.5\u00a0s",
+        "numeric": 2518.209
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0
+      },
+      "total-blocking-time": {
+        "display": "1,050\u00a0ms",
+        "numeric": 1054
+      },
+      "first-contentful-paint": {
+        "display": "1.9\u00a0s",
+        "numeric": 1891.2089999999998
+      },
+      "speed-index": {
+        "display": "2.5\u00a0s",
+        "numeric": 2470.729046014587
+      }
+    }
+  },
+  "after": {
+    "fetch_time_utc": "2026-10-24T21:18:28.196Z",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "display": "1.6\u00a0s",
+        "numeric": 1588.8490000000002
+      },
+      "cumulative-layout-shift": {
+        "display": "0",
+        "numeric": 0
+      },
+      "total-blocking-time": {
+        "display": "170\u00a0ms",
+        "numeric": 171.0000000000001
+      },
+      "first-contentful-paint": {
+        "display": "1.0\u00a0s",
+        "numeric": 980.849
+      },
+      "speed-index": {
+        "display": "2.3\u00a0s",
+        "numeric": 2281.151363670716
+      }
+    }
+  }
+}

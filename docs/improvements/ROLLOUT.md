@@ -42,3 +42,11 @@ The six-face geometry, keyboard rotation, pointer response, reset, reduced-motio
 ## First external mobile measurement
 
 GitHub-hosted Lighthouse13.5.0 successfully measured the live site on24 October2026 (run40094410536). This resolved the earlier measurement gap without disabling TLS verification in the managed browser. The first single-run lab scores were performance73, accessibility100, best practices96 and SEO100. Lab LCP was2.5s, CLS0 and total blocking time1050ms. This is not field INP/CWV and not a ranking/citation score. See lighthouse-before/report.json and report.html. A repeat measurement after the interactive-site refinements is recorded separately; do not cherry-pick one run as real-user performance.
+
+## Published interactive release and measured follow-up
+
+GitHub Pages successfully built artifact commit `0c74f06046086cb8b2d980d5adacc5b7bdf1660c`. Live HTTPS checks confirmed twelve pages, twenty-three discovered assets, six cube faces, rotation controls, effects.js and the configured Formspree action. No Wix/Spline service claims were added.
+
+The follow-up GitHub-hosted mobile Lighthouse run40133602643 completed successfully against the live homepage. Scores: performance97, accessibility100, best practices100, SEO100. Lab LCP1.6s, FCP1.0s, CLS0, TBT170ms and Speed Index2.3s. Before/after reports are retained in lighthouse-before/ and lighthouse-after/, with machine-readable comparison in LIGHTHOUSE-COMPARISON.json. These are two synthetic runs, not a controlled statistical experiment; host/network variance remains possible. The latest scores are not field CWV, ranking, GEO-citation or conversion measurements.
+
+Actual form inbox delivery has not been tested by sending a message; provider interaction states were tested through mocks. Search Console verification still awaits a value from the owner's account. No practitioner biography, testimonial or undocumented SEO/GEO task has been invented while awaiting owner input. The unowned .com domain remains unconnected; GitHub Pages is the active production address.

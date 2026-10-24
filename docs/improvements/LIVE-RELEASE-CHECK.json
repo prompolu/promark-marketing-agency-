@@ -4,65 +4,65 @@
     {
       "route": "/",
       "status": 200,
-      "ttfb_s": 0.39259
+      "ttfb_s": 0.459824
     },
     {
       "route": "/services/",
       "status": 200,
-      "ttfb_s": 0.40058
+      "ttfb_s": 0.426049
     },
     {
       "route": "/realisations/",
       "status": 200,
-      "ttfb_s": 0.416529
+      "ttfb_s": 0.401402
     },
     {
       "route": "/a-propos/",
       "status": 200,
-      "ttfb_s": 0.396022
+      "ttfb_s": 0.411891
     },
     {
       "route": "/contact/",
       "status": 200,
-      "ttfb_s": 0.248496
+      "ttfb_s": 0.364058
     },
     {
       "route": "/realisations/prompolu-web/",
       "status": 200,
-      "ttfb_s": 0.374833
+      "ttfb_s": 0.470579
     },
     {
       "route": "/realisations/prompolu-motion/",
       "status": 200,
-      "ttfb_s": 0.385718
+      "ttfb_s": 0.228656
     },
     {
       "route": "/realisations/saraproc-motion/",
       "status": 200,
-      "ttfb_s": 0.329409
+      "ttfb_s": 0.372526
     },
     {
       "route": "/services/creation-contenu-video/",
       "status": 200,
-      "ttfb_s": 0.406477
+      "ttfb_s": 0.302205
     },
     {
       "route": "/services/gestion-reseaux-sociaux/",
       "status": 200,
-      "ttfb_s": 0.356627
+      "ttfb_s": 0.373974
     },
     {
       "route": "/services/creation-site-web/",
       "status": 200,
-      "ttfb_s": 0.356301
+      "ttfb_s": 0.389702
     },
     {
       "route": "/services/motion-design/",
       "status": 200,
-      "ttfb_s": 0.38824
+      "ttfb_s": 0.373738
     }
   ],
-  "assets_checked": 22,
+  "assets_checked": 23,
   "sitemap_urls": 12,
   "form_endpoint": "https://formspree.io/f/xbgglkeg",
   "form_delivery": "Not tested by sending a message",
