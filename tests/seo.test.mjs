@@ -86,7 +86,7 @@ test('GitHub project-site build prefixes local links, assets, posters and SEO UR
   execFileSync(process.execPath,[join(directory,'scripts/build.mjs')],{env:{...process.env,SITE_URL:'https://agency.example',SITE_BASE_PATH:'/agency'},stdio:'pipe'});
   const home=await readFile(join(directory,'dist/index.html'),'utf8');
   assert(home.includes('href="https://agency.example/agency/"'));
-  assert(home.includes('src="/agency/app.js"'));
+  assert.match(home,/src="\/agency\/app\.js\?v=[a-f0-9]{12}"/);
   assert(home.includes('href="/agency/contact/"'));
   assert(home.includes('href="/agency/realisations/prompolu-web/"'));
   assert(!/(href|src|poster)="\/(?!agency\/|\/)/.test(home));
