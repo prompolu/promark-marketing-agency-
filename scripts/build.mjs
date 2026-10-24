@@ -1,11 +1,14 @@
 import {siteConfig, contactConfig} from './site-config.mjs';
-import {productionOrigin, pageMetadata, seoHead, escapeHTML} from './seo.mjs';
+import {productionOrigin, deploymentBasePath, pageMetadata, seoHead, escapeHTML} from './seo.mjs';
 import {projects} from './projects.mjs';
 import {mkdir, writeFile, cp, access, rm} from 'node:fs/promises';
 const out = new URL('../dist/', import.meta.url);
 await mkdir(out, {recursive:true});
 await cp(new URL('../public/', import.meta.url), out, {recursive:true});
-const domain = productionOrigin(process.env.SITE_URL ?? siteConfig.origin);
+const origin = productionOrigin(process.env.SITE_URL ?? siteConfig.origin);
+const basePath = deploymentBasePath(process.env.SITE_BASE_PATH);
+const domain = origin ? origin+basePath : '';
+const applyBasePath = html => basePath ? html.replace(/(href|src|poster)="\/(?!\/)/g, `$1="${basePath}/`) : html;
 let hasLogo = false;
 try { await access(new URL('../public/logo.svg',import.meta.url)); hasLogo = true; } catch {}
 const logo = hasLogo ? '<span class="logo-frame"><img class="logo" src="/logo.svg" alt="Promark" width="1536" height="1024"></span>' : '<span class="logo-slot" aria-label="Emplacement du logo original Promark"><span class="logo-symbol" aria-hidden="true">↗</span><span>AGENCE CRÉATIVE<br>FÈS, MAROC</span></span>';
@@ -50,9 +53,9 @@ for (const [slug,title,content,description] of pages) {
  const seo=seoHead({origin:domain,slug,title:pageTitle,description:pageDescription,project});
  const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escapeHTML(pageTitle)}</title><meta name="description" content="${escapeHTML(pageDescription)}"><meta name="theme-color" content="#000000"><meta property="og:type" content="website"><meta property="og:locale" content="fr_MA"><meta property="og:title" content="${escapeHTML(pageTitle)}"><meta property="og:description" content="${escapeHTML(pageDescription)}">${seo}<link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head><body><a href="#main" class="skip-link">Aller au contenu</a><header class="site-header"><div class="wrap nav-wrap"><a class="brand" href="/" aria-label="Promark, accueil">${logo}</a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Navigation principale">${nav}</nav>${button('Parlons de votre projet','/contact/','nav-cta')}</div></header><main id="main">${content}</main><footer><div class="wrap"><div class="footer-top"><a class="brand" href="/" aria-label="Promark, accueil">${logo}</a><p>Des idées claires.<br>Des marques remarquées.</p><a class="back-top" href="#main">Retour en haut ↑</a></div><div class="footer-contacts"><a href="mailto:${contactConfig.email}">${contactConfig.email}</a><a href="tel:${contactConfig.phone}">${contactConfig.phoneDisplay}</a><a href="${contactConfig.whatsapp}" target="_blank" rel="noopener noreferrer">WhatsApp <span class="sr-only">(nouvel onglet)</span> ${arrow}</a></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Promark · Fès, Maroc</span><nav aria-label="Navigation de pied de page">${nav}</nav></div></div></footer><script type="application/json" id="contact-data">${JSON.stringify(contactConfig)}</script><script type="application/json" id="project-data">${JSON.stringify(projects)}</script><dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fermer le projet">Fermer ×</button><div id="dialog-content"></div></dialog></body></html>`;
  await mkdir(new URL(slug?slug+'/':'',out),{recursive:true});
- await writeFile(new URL(`${slug?slug+'/':''}index.html`,out),html.replaceAll('↗', '<span class="arrow-icon" aria-hidden="true"></span>').replaceAll('✳', '<svg class="asterisk" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2V98M2 50H98M16 16L84 84M16 84L84 16" fill="none" stroke="currentColor" stroke-width="8"/></svg>'));
+ await writeFile(new URL(`${slug?slug+'/':''}index.html`,out),applyBasePath(html).replaceAll('↗', '<span class="arrow-icon" aria-hidden="true"></span>').replaceAll('✳', '<svg class="asterisk" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2V98M2 50H98M16 16L84 84M16 84L84 16" fill="none" stroke="currentColor" stroke-width="8"/></svg>'));
 }
-await writeFile(new URL('404.html',out),'<!doctype html><html lang="fr"><meta charset="utf-8"><title>Page introuvable — Promark</title><meta name="robots" content="noindex,follow"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css"><main class="wrap section"><p class="eyebrow">404</p><h1>Cette page<br>reste à créer.</h1><a class="button dark" href="/">Retour à l’accueil ↗</a></main></html>');
+await writeFile(new URL('404.html',out),applyBasePath('<!doctype html><html lang="fr"><meta charset="utf-8"><title>Page introuvable — Promark</title><meta name="robots" content="noindex,follow"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css"><main class="wrap section"><p class="eyebrow">404</p><h1>Cette page<br>reste à créer.</h1><a class="button dark" href="/">Retour à l’accueil ↗</a></main></html>'));
 await rm(new URL('sitemap.xml',out), {force:true});
 if (domain) await writeFile(new URL('sitemap.xml',out),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.map(([s])=>`<url><loc>${domain}/${s?s+'/':''}</loc></url>`).join('')}</urlset>`);
 await writeFile(new URL('robots.txt',out),`User-agent: *\n${domain?'Allow: /':'Disallow: /'}\n${domain?'Sitemap: '+domain+'/sitemap.xml\n':''}`);

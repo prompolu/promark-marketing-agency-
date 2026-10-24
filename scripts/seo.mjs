@@ -5,6 +5,11 @@ export function productionOrigin(value) {
  if(url.protocol!=='https:'||url.username||url.password||url.pathname!=='/'||url.search||url.hash)throw new Error('SITE_URL must be a confirmed HTTPS origin, without credentials, path, query or fragment.');
  return url.origin;
 }
+export function deploymentBasePath(value='') {
+ if(!value||value==='/')return '';
+ if(!/^\/(?:[A-Za-z0-9_-]+\/)*[A-Za-z0-9_-]+\/?$/.test(value))throw new Error('SITE_BASE_PATH must be a clean absolute path with no query, fragment or traversal.');
+ return value.replace(/\/$/,'');
+}
 export const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const metadata={
  '':['Agence marketing à Fès : web & motion design | Promark','Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.'],

@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {siteConfig} from '../scripts/site-config.mjs';
-import {productionOrigin,seoHead} from '../scripts/seo.mjs';
+import {productionOrigin,deploymentBasePath,seoHead} from '../scripts/seo.mjs';
 
 test('Production URLs require a full HTTPS origin',()=>{
  assert.equal(productionOrigin(''),'');
@@ -69,5 +69,30 @@ with zipfile.ZipFile('${directory}/preview/PROMARK-preview.zip') as z:
  assert b'Disallow: /' in z.read('PROMARK-preview/robots.txt')
  assert 'PROMARK-preview/sitemap.xml' not in z.namelist()
 `],{stdio:'pipe'});
+ }finally{await rm(directory,{recursive:true,force:true});}
+});
+
+test('Repository paths stay inside the chosen deployment prefix',()=>{
+ assert.equal(deploymentBasePath('/promark-marketing-agency-/'),'/promark-marketing-agency-');
+ assert.equal(deploymentBasePath('/'),'');
+ for(const value of ['repo','//other.example','/../repo','/repo?x=1','/repo#x','/repo%2Fother'])assert.throws(()=>deploymentBasePath(value));
+});
+test('GitHub project-site build prefixes local links, assets, posters and SEO URLs',async()=>{
+ const directory=await mkdtemp(join(tmpdir(),'promark-pages-'));
+ try{
+  await cp(new URL('../scripts',import.meta.url),join(directory,'scripts'),{recursive:true});
+  await cp(new URL('../public',import.meta.url),join(directory,'public'),{recursive:true});
+  execFileSync(process.execPath,[join(directory,'scripts/build.mjs')],{env:{...process.env,SITE_URL:'https://agency.example',SITE_BASE_PATH:'/agency'},stdio:'pipe'});
+  const home=await readFile(join(directory,'dist/index.html'),'utf8');
+  assert(home.includes('href="https://agency.example/agency/"'));
+  assert(home.includes('src="/agency/app.js"'));
+  assert(home.includes('href="/agency/contact/"'));
+  assert(home.includes('href="/agency/realisations/prompolu-web/"'));
+  assert(!/(href|src|poster)="\/(?!agency\/|\/)/.test(home));
+  const project=await readFile(join(directory,'dist/realisations/prompolu-web/index.html'),'utf8');
+  assert(project.includes('poster="/agency/media/prompolu-site.jpg"'));
+  const sitemap=await readFile(join(directory,'dist/sitemap.xml'),'utf8');
+  assert.equal((sitemap.match(/<loc>https:\/\/agency.example\/agency\//g)||[]).length,8);
+  const error=await readFile(join(directory,'dist/404.html'),'utf8');assert(error.includes('href="/agency/"'));
  }finally{await rm(directory,{recursive:true,force:true});}
 });

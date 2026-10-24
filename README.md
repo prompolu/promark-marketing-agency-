@@ -85,3 +85,15 @@ The default domain is `https://promarketing.com`, as selected by the user. `SITE
 Use `npm run preview:package` after building to refresh the offline ZIP. It rewrites page/media links for local use and remains noindex. The local development server supports normalising index/slash URLs and security headers; equivalent deployment-host settings still need to be verified after launch.
 
 Contact browser checks in `/workspace/promark-validation/contact.cjs` cover 1440/390/320px layouts, required-field and email validation, destination and encoded email-body contents, plus local draft downloads. Email and WhatsApp links were not used to send test messages.
+
+## GitHub Pages deployment
+
+The user authorised deployment through GitHub. The Pages destination is:
+
+https://prompolu.github.io/promark-marketing-agency-/
+
+Run `npm run deploy:github` from this checkout. It checks syntax and tests, builds with `SITE_URL=https://prompolu.github.io` and `SITE_BASE_PATH=/promark-marketing-agency-`, and pushes only the generated site (including `.nojekyll`) to `gh-pages`. It uses an isolated temporary Git index and does not switch source branches or publish repository/audit files. Existing Pages history is retained; no force push is used. A git push alone is not proof that the Pages build succeeded—verify the Pages status and public URL after each deployment.
+
+Configure GitHub Pages to publish from branch `gh-pages`, folder `/`. The custom domain is deliberately not attached while `promarketing.com` serves a sale page. The default custom-domain build setting remains available for a later, verified domain transition. Pages-build SEO URLs use the actual GitHub Pages address instead. GitHub controls the host's headers, redirects, caching, root-domain robots policy, and TLS; the Node development server's custom headers do not apply there.
+
+Root-relative links, local media sources and poster URLs are prefixed at build time for project-site deployments. The eight sitemap/canonical/structured-data URLs and social images use the same destination. Offline ZIP packaging remains a separate custom-domain preview flow; do not package a prefixed Pages build as an offline preview.
