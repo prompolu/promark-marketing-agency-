@@ -37,7 +37,7 @@ The site uses a black theme: background **#000000**, surfaces **#101110**, foreg
 2. Supply an approved submission destination/service. There are no supplied contact credentials or verified address/number. The form currently validates and downloads a local text draft, explicitly stating that it has not been sent. No requests or personal data are transmitted. Integrate a real backend and verified delivery/error states before enabling submissions; keep service secrets on the server.
 3. Confirm the exact lime HEX or provide the original colour asset for sampling if exact colour matching is required. No other logo modification is needed.
 
-All portfolio items are clearly labelled concepts; no invented clients, results, staff, awards or testimonials. Replace with approved project assets when available. No unverified social links or legal claims are included.
+The portfolio presents real client work supplied by the user: Prompolu (website, SEO, GEO and motion design) and Saraprocmaroc (animated video). Case studies describe the confirmed scope without invented performance results. The Prompolu website poster comes from the supplied site-launch video. The About-page typography is an own-brand Promark signature, not a client project. No unverified social links or legal claims are included.
 
 ## Validation performed
 
@@ -49,6 +49,20 @@ All portfolio items are clearly labelled concepts; no invented clients, results,
 
 No public deployment has been performed.
 
-## Motion design
+## Portfolio media
 
-The hero, portfolio compositions and About-page artwork use animated typography in black, white and lime. Each concept runs a short, finite sequence on entering the viewport. Replay controls restart the sequence. The `prefers-reduced-motion` setting displays the final static frame and hides replay controls. No video downloads, external libraries, audio, flashing or infinite loops are used. These are labelled concept explorations, not commissioned client work.
+`scripts/projects.mjs` is the shared source for the three case studies and six videos. Client video sources were supplied directly by the user. Exact duplicate uploads were removed; both distinct S140RP edits are retained. Original source files are preserved in the cloud attachments, while H.264/AAC browser copies and JPEG posters live in `public/media/`. Landscape clips are limited to 1280px wide and portrait clips to 720px wide, keeping their aspect ratios. The supplied 4K site-launch clip has a web rendition; the source is not overwritten.
+
+One earlier Saraprocmaroc upload exceeded the 32 MiB transfer limit and was not included. The supplied 60-second Saraproc Maroc file is included. No unverified SEO/GEO performance claims are made.
+
+Players use native controls, play only on request and preserve portrait/landscape aspect ratios. Closing a project pauses playback, and starting another video pauses the previous one. Media uses local files, so the downloadable preview works without third-party video hosts. The development server supports byte-range requests for seeking.
+
+To regenerate the offline ZIP after building:
+
+```sh
+python scripts/package-preview.py
+```
+
+Browser validation covers 20 page/viewport combinations plus actual decoding, playback and seeking of all six clips, filters, project dialogs, mobile menu and media-range requests. The package is approximately 8.5 MB.
+
+The About-page signature uses a finite animated typography sequence. Reduced-motion preferences display its static final frame. No looping animation or autoplay sound is used.
