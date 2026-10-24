@@ -28,10 +28,25 @@ if(form){
  const fields=[...form.querySelectorAll('input,select,textarea')];
  function validate(field){let error='';if(field.required&&!field.value.trim())error='Veuillez renseigner ce champ.';else if(field.validity.typeMismatch)error='Indiquez une adresse email valide.';else if(field.name==='description'&&field.value.trim().length<20)error='Décrivez votre projet en au moins 20 caractères.';field.setAttribute('aria-invalid',String(Boolean(error)));document.getElementById(field.id+'-error').textContent=error;return !error;}
  fields.forEach(field=>field.addEventListener('input',()=>{document.querySelector('#form-status').textContent='';if(field.hasAttribute('aria-invalid'))validate(field);}));
- form.addEventListener('submit',e=>{e.preventDefault();const valid=fields.map(validate).every(Boolean);if(!valid){fields.find(f=>f.getAttribute('aria-invalid')==='true').focus();document.querySelector('#form-status').textContent='Vérifiez les champs indiqués avant de télécharger votre demande.';return;}
- const labels={name:'Nom',company:'Entreprise',email:'Email',phone:'Téléphone',service:'Service souhaité',description:'Description du projet'};
- const text='DEMANDE DE PROJET — PROMARK\nDocument préparé localement. Cette demande n’a pas été envoyée.\n\n'+fields.map(f=>labels[f.name]+' : '+(f.tagName==='SELECT'?f.selectedOptions[0].text:f.value)).join('\n\n');
- const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='demande-projet-promark.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);document.querySelector('#form-status').textContent='Votre fichier a été préparé. Aucune demande n’a été envoyée à Promark.';
+ const contact=JSON.parse(document.querySelector('#contact-data').textContent);
+ function prepare(){
+  const valid=fields.map(validate).every(Boolean);
+  if(!valid){fields.find(f=>f.getAttribute('aria-invalid')==='true').focus();document.querySelector('#form-status').textContent='Vérifiez les champs indiqués avant de préparer votre demande.';return null;}
+  const labels={name:'Nom',company:'Entreprise',email:'Email',phone:'Téléphone',service:'Service souhaité',description:'Description du projet'};
+  const text='DEMANDE DE PROJET — PROMARK\n\n'+fields.map(f=>labels[f.name]+' : '+(f.tagName==='SELECT'?f.selectedOptions[0].text:f.value)).join('\n\n');
+  return text;
+ }
+ form.addEventListener('submit',e=>{
+  e.preventDefault();const text=prepare();if(!text)return;
+  const subject=('Projet Promark — '+form.elements.company.value).replace(/[\r\n]/g,' ');
+  const link=document.createElement('a');link.href='mailto:'+contact.email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);link.click();
+  document.querySelector('#form-status').textContent='Un brouillon a été demandé à votre application email. Vérifiez le message et envoyez-le depuis votre messagerie. Aucun envoi automatique n’a été effectué.';
+ });
+ document.querySelector('.download-draft').addEventListener('click',()=>{
+  const text=prepare();if(!text)return;
+  const url=URL.createObjectURL(new Blob([text+'\n\nDocument préparé localement. Cette demande n’a pas été envoyée.'],{type:'text/plain;charset=utf-8'}));
+  const a=document.createElement('a');a.href=url;a.download='demande-projet-promark.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  document.querySelector('#form-status').textContent='Votre fichier a été préparé. Envoyez-le à '+contact.email+'. Aucune demande n’a été envoyée automatiquement.';
  });
 }
 

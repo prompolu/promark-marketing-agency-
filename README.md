@@ -2,7 +2,7 @@
 
 [Download the interactive preview](https://github.com/prompolu/promark-marketing-agency-/raw/refs/heads/promark-preview/preview/PROMARK-preview.zip)
 
-Extract the ZIP, then open `PROMARK-preview/index.html`. It includes eight French pages, real case studies and client videos. The form downloads an unsent draft. No public deployment has been made.
+Extract the ZIP, then open `PROMARK-preview/index.html`. It includes eight French pages, real case studies and client videos. The form prepares an email draft in the visitor’s mail app, with a downloadable fallback. No public deployment has been made.
 
 French, responsive agency website. Eight static pages generated with Node.js; no application dependencies or external tracking.
 
@@ -35,7 +35,7 @@ The site uses a black theme: background **#000000**, surfaces **#101110**, foreg
 ## Launch requirements
 
 1. The user-selected production origin is **https://promarketing.com**, saved in `scripts/site-config.mjs`. Normal builds generate matching canonical URLs, social metadata, structured data and an eight-page sitemap. `SITE_URL` can override the origin; setting it to an empty string creates a noindex build without production URLs. DNS, HTTPS and deployment still require verification before launch.
-2. Supply an approved submission destination/service. There are no supplied contact credentials or verified address/number. The form currently validates and downloads a local text draft, explicitly stating that it has not been sent. No requests or personal data are transmitted. Integrate a real backend and verified delivery/error states before enabling submissions; keep service secrets on the server.
+2. Public contact details are configured in `scripts/site-config.mjs`: `marketingagencypromark@gmail.com`, `+212684681567`, and `https://wa.me/212684681567`. Email, phone and WhatsApp links appear on the Contact page and footer; Organization/ContactPoint data uses the same source. The form validates input and opens an email draft; the visitor must send it from their own mail app. Downloading a local draft remains a fallback. A server-side email service is still required for automatic in-page submission and delivery/error confirmation; no credentials are supplied or embedded.
 3. Confirm the exact lime HEX or provide the original colour asset for sampling if exact colour matching is required. No other logo modification is needed.
 
 The portfolio presents real client work supplied by the user: Prompolu (website, SEO, GEO and motion design) and Saraprocmaroc (animated video). Case studies describe the confirmed scope without invented performance results. The Prompolu website poster comes from the supplied site-launch video. The About-page typography is an own-brand Promark signature, not a client project. No unverified social links or legal claims are included.
@@ -83,3 +83,5 @@ npm test
 The default domain is `https://promarketing.com`, as selected by the user. `SITE_URL= npm run build` produces a domainless noindex preview. Offline ZIPs always remain noindex, disallow crawling and omit the production sitemap. With a confirmed origin, the build generates matching canonicals/sitemap, Organization/WebSite/page/breadcrumb metadata and absolute social-preview URLs. No local placeholders are included in the published preview.
 
 Use `npm run preview:package` after building to refresh the offline ZIP. It rewrites page/media links for local use and remains noindex. The local development server supports normalising index/slash URLs and security headers; equivalent deployment-host settings still need to be verified after launch.
+
+Contact browser checks in `/workspace/promark-validation/contact.cjs` cover 1440/390/320px layouts, required-field and email validation, destination and encoded email-body contents, plus local draft downloads. Email and WhatsApp links were not used to send test messages.

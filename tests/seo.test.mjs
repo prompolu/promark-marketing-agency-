@@ -18,7 +18,10 @@ test('Structured metadata encodes content and preserves only confirmed entity fa
  const json=JSON.parse(head.match(/<script type="application\/ld\+json">(.*?)<\/script>/)[1]);
  const org=json['@graph'].find(x=>x['@type']==='Organization');
  assert.equal(org.location.address.addressLocality,'Fès');
- for(const field of ['telephone','email','aggregateRating','foundingDate','sameAs','priceRange'])assert.equal(org[field],undefined);
+ assert.equal(org.email,'marketingagencypromark@gmail.com');
+ assert.equal(org.telephone,'+212684681567');
+ assert.equal(org.contactPoint.url,'https://wa.me/212684681567');
+ for(const field of ['aggregateRating','foundingDate','sameAs','priceRange'])assert.equal(org[field],undefined);
  assert(!head.includes('FAQPage'));
 });
 test('Production build emits unique, indexable pages and complete, matching sitemap/schema',async()=>{

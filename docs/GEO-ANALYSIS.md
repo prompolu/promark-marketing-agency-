@@ -36,7 +36,7 @@ The user selected `https://promarketing.com` as the production origin. Normal bu
 
 1. Verify ownership and DNS for the user-selected `promarketing.com` domain, then confirm HTTPS on the intended host. `npm run build` generates production URLs for this origin. Publish only the production `dist/` build, not the offline ZIP.
 2. Deploy only after explicit authorisation. Ensure the static host preserves 404 status and HTTPS; the Node development server's redirect/security headers do not automatically configure another host.
-3. Configure the real contact destination before enabling submissions.
+3. Public contact information is now user-confirmed and implemented in the page/footer and Organization/ContactPoint data. The form prepares an email draft to `marketingagencypromark@gmail.com`; the visitor must send it manually. A server-side email integration is needed only if automatic in-page delivery is required.
 4. Once live, verify robots/sitemap/canonicals/structured data on the actual host, then submit through the owner's Search Console/Bing tools when available. Measure field CWV and actual search/AI visibility separately.
 
 Guidance reference: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide

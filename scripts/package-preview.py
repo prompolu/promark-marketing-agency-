@@ -32,5 +32,5 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
             data = data.decode().replace("new URL('contact/',assetRoot)", "new URL('contact/index.html',assetRoot)").replace('`realisations/${p.id}/`','`realisations/${p.id}/index.html`').encode()
         archive.writestr(str(Path('PROMARK-preview') / relative), data)
     archive.writestr('PROMARK-preview/robots.txt', 'User-agent: *\nDisallow: /\n')
-    archive.writestr('PROMARK-preview/OPEN-ME.txt', 'Unzip the complete archive, then open index.html in your browser. Keep the media folder with the pages. Videos play on request and include sound controls. The contact form prepares an unsent local draft. Nothing is deployed publicly.\n')
+    archive.writestr('PROMARK-preview/OPEN-ME.txt', 'Unzip the complete archive, then open index.html in your browser. Keep the media folder with the pages. Videos play on request and include sound controls. The contact form opens your email app or downloads a local draft. Send the email yourself; no automatic delivery is configured. Nothing is deployed publicly.\n')
 print(f'Built {output} ({output.stat().st_size / 1_000_000:.1f} MB)')

@@ -1,3 +1,4 @@
+import {contactConfig} from './site-config.mjs';
 export function productionOrigin(value) {
  if(!value) return '';
  const url=new URL(value);
@@ -24,7 +25,7 @@ export function seoHead({origin,slug,title,description,project}){
  const imageAlt=project?project.alt:'Promark, agence marketing et créative à Fès — présentation du site.';
  const tags=`<meta name="robots" content="${origin?'index,follow,max-image-preview:large':'noindex,follow'}"><meta property="og:site_name" content="Promark"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(title)}"><meta name="twitter:description" content="${escapeHTML(description)}">`;
  if(!origin)return tags;
- const organization={'@type':'Organization','@id':`${origin}/#organization`,name:'Promark',url:origin+'/',description:'Agence de marketing et de création basée à Fès, au Maroc.',location:{'@type':'Place',name:'Fès, Maroc',address:{'@type':'PostalAddress',addressLocality:'Fès',addressCountry:'MA'}}};
+ const organization={'@type':'Organization','@id':`${origin}/#organization`,name:'Promark',url:origin+'/',email:contactConfig.email,telephone:contactConfig.phone,contactPoint:{'@type':'ContactPoint',contactType:'customer enquiries',email:contactConfig.email,telephone:contactConfig.phone,url:contactConfig.whatsapp},description:'Agence de marketing et de création basée à Fès, au Maroc.',location:{'@type':'Place',name:'Fès, Maroc',address:{'@type':'PostalAddress',addressLocality:'Fès',addressCountry:'MA'}}};
  const website={'@type':'WebSite','@id':`${origin}/#website`,url:origin+'/',name:'Promark',inLanguage:'fr-MA',publisher:{'@id':organization['@id']}};
  const page={'@type':slug==='contact'?'ContactPage':slug==='a-propos'?'AboutPage':slug==='realisations'?'CollectionPage':'WebPage','@id':canonical+'#webpage',url:canonical,name:title,description,inLanguage:'fr-MA',isPartOf:{'@id':website['@id']},publisher:{'@id':organization['@id']}};
  const graph=[organization,website,page];
