@@ -72,6 +72,10 @@ Browser validation covers 20 page/viewport combinations plus actual decoding, pl
 
 The About-page signature uses a finite animated typography sequence. Reduced-motion preferences display its static final frame. No looping animation or autoplay sound is used.
 
+## Enquiry source
+
+When a visitor arrives through a tagged link (for example the Instagram bio link `?utm_source=instagram&utm_medium=social&utm_campaign=bio`), `public/contact.js` keeps the `utm_source`, `utm_medium` and `utm_campaign` values in `sessionStorage` for that browser tab only. A form sent through Formspree then carries a `source` field such as `instagram / social / bio`. No cookie, third-party script or analytics service is used, and untagged visits send no source.
+
 ## SEO and AI-search implementation
 
 Case studies have permanent, server-rendered URLs and crawlable project links. JavaScript provides optional quick previews. See [SEO validation](docs/SEO-VALIDATION.md) and [GEO implementation review](docs/GEO-ANALYSIS.md).
