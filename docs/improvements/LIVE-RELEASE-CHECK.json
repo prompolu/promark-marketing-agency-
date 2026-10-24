@@ -1,0 +1,70 @@
+{
+  "url": "https://prompolu.github.io/promark-marketing-agency-/",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "ttfb_s": 0.39259
+    },
+    {
+      "route": "/services/",
+      "status": 200,
+      "ttfb_s": 0.40058
+    },
+    {
+      "route": "/realisations/",
+      "status": 200,
+      "ttfb_s": 0.416529
+    },
+    {
+      "route": "/a-propos/",
+      "status": 200,
+      "ttfb_s": 0.396022
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "ttfb_s": 0.248496
+    },
+    {
+      "route": "/realisations/prompolu-web/",
+      "status": 200,
+      "ttfb_s": 0.374833
+    },
+    {
+      "route": "/realisations/prompolu-motion/",
+      "status": 200,
+      "ttfb_s": 0.385718
+    },
+    {
+      "route": "/realisations/saraproc-motion/",
+      "status": 200,
+      "ttfb_s": 0.329409
+    },
+    {
+      "route": "/services/creation-contenu-video/",
+      "status": 200,
+      "ttfb_s": 0.406477
+    },
+    {
+      "route": "/services/gestion-reseaux-sociaux/",
+      "status": 200,
+      "ttfb_s": 0.356627
+    },
+    {
+      "route": "/services/creation-site-web/",
+      "status": 200,
+      "ttfb_s": 0.356301
+    },
+    {
+      "route": "/services/motion-design/",
+      "status": 200,
+      "ttfb_s": 0.38824
+    }
+  ],
+  "assets_checked": 22,
+  "sitemap_urls": 12,
+  "form_endpoint": "https://formspree.io/f/xbgglkeg",
+  "form_delivery": "Not tested by sending a message",
+  "field_cwv": "Not measured"
+}

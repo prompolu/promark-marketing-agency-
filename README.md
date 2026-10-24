@@ -107,3 +107,9 @@ Root-relative links, local media sources and poster URLs are prefixed at build t
 See [rollout notes](docs/improvements/ROLLOUT.md) for the twelve-page release, form-service configuration, responsive media, tests and outstanding owner information. `scripts/services.mjs` contains unique service-page content; `scripts/contact.mjs` renders the form; `public/contact.js` handles its interaction. `scripts/projects.mjs` contains project records and evidence-based descriptions.
 
 Optional owner-supplied Search Console and Bing verification values can be provided with `GOOGLE_SITE_VERIFICATION` and `BING_SITE_VERIFICATION` at build/deploy time. No verification value or analytics account is currently configured. Do not add fictitious testimonials, personal biographies or performance claims to fill missing owner information.
+
+## Interactive features
+
+The homepage's brand object is actual six-face CSS3D with pointer tilt, native slider/keyboard rotation and reset. Scroll-entry effects are progressive, finite and disabled for reduced-motion users. There is no WebGL/Spline dependency, perpetual canvas loop, custom cursor or scroll hijacking. These are features of the Promark website; they do not advertise Wix/Spline work as agency services.
+
+An on-demand `Live site performance audit` GitHub Actions workflow measures the public mobile site with pinned Lighthouse13.5.0 and saves JSON/HTML artifacts. These are lab results; Google Search Console/CrUX indexing and field measurements still require the owner's account/eligible traffic.

@@ -30,3 +30,15 @@
 5. Provider/account delivery verification for the real form endpoint. Test responses demonstrate UI behavior, not delivery to an actual inbox.
 
 The predeployment audit documents a historical version; these changes resolve several of its implementation findings without claiming live rankings, citations, testimonials or conversion rates.
+
+## Interactive-site request
+
+The user clarified that the supplied 3D/Wix/Spline feature list describes desired behavior on this site, not services to advertise. No Wix, custom-Wix-code or Spline service claims were added. The existing four service pages continue to describe the agency's original confirmed offerings.
+
+The homepage now contains a real six-face CSS3D brand object with pointer tilt, native keyboard/range rotation and reset. The original logo artwork remains unchanged. The scene does not run a continuous render/animation loop and does not download a 3D library or third-party embed. Deferred progressive scroll-entry animations use transforms/opacity and respect reduced-motion preferences. Visible content remains readable without these effects. Below-fold content visibility reduces initial rendering work; full-page screenshots should scroll sections into view first to capture native lazy-rendered content accurately.
+
+The six-face geometry, keyboard rotation, pointer response, reset, reduced-motion behavior and responsive layout passed browser tests. Visible portfolio text now supplies its own accessible name, resolving the mismatch found by Lighthouse. The original SVG is explicitly referenced as the favicon to prevent the browser's root favicon404. Contact JavaScript is requested only on the contact page.
+
+## First external mobile measurement
+
+GitHub-hosted Lighthouse13.5.0 successfully measured the live site on24 October2026 (run40094410536). This resolved the earlier measurement gap without disabling TLS verification in the managed browser. The first single-run lab scores were performance73, accessibility100, best practices96 and SEO100. Lab LCP was2.5s, CLS0 and total blocking time1050ms. This is not field INP/CWV and not a ranking/citation score. See lighthouse-before/report.json and report.html. A repeat measurement after the interactive-site refinements is recorded separately; do not cherry-pick one run as real-user performance.
