@@ -1,0 +1,4 @@
+Original SVG SHA-256 (both source and delivered file):
+856b679317643c7f6df875282a03995d7008b37b77b7b56ec0ee1e524f6ad27e
+
+Source website working tree was not changed. No deployment was performed.

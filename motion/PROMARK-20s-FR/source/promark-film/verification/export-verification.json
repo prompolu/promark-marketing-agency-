@@ -1,0 +1,42 @@
+{
+  "file": "PROMARK_Motion_20s_FR.mp4",
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 600,
+    "duration_seconds": 20.0
+  },
+  "audio": {
+    "codec": "aac",
+    "channels": 2,
+    "sample_rate": "48000",
+    "duration_seconds": 20.0,
+    "integrated_LUFS": -16.05,
+    "true_peak_dBTP": -3.37
+  },
+  "full_decode": "passed",
+  "scenes_checked_at_frames": [
+    45,
+    96,
+    123,
+    141,
+    162,
+    183,
+    234,
+    321,
+    378,
+    441,
+    495,
+    534,
+    599
+  ],
+  "source_final_hold_pixel_identical_17_8_to_19_966667": true,
+  "logo_sha256": "856b679317643c7f6df875282a03995d7008b37b77b7b56ec0ee1e524f6ad27e",
+  "reference_video": "unavailable; techniques taken from written brief",
+  "font_substitutions": [
+    "Liberation Sans for Arial",
+    "Noto Serif italic for Georgia"
+  ]
+}

@@ -1,0 +1,475 @@
+Create and render a premium 20-second motion-graphics promotional film for PROMARK, using the attached index.html as the authoritative source for brand messaging, services, portfolio structure, and graphic motifs.
+
+Use the previously supplied reference video for animation technique: cascading typography, expanding shapes, dimensional floating cards, accelerated gallery scrolling, and continuous transformations between scenes.
+
+Create an original agency film that expresses Promark’s central message:
+“Votre marque mérite d’être remarquée.”
+
+Deliver the finished video and editable source project. Do not stop at a storyboard or written proposal.
+
+TECHNICAL SPECIFICATIONS
+
+- Duration: exactly 20 seconds.
+- Resolution: 1920 × 1080.
+- Aspect ratio: 16:9.
+- Frame rate: 30 fps.
+- Total: 600 frames.
+- Language: French.
+- Export: H.264 MP4 with stereo AAC audio.
+- Audience: businesses seeking content, social media, websites, and motion design.
+- Goal: make Promark memorable and encourage a project inquiry.
+
+SOURCE INTERPRETATION
+
+The supplied HTML describes Promark, a marketing and creative agency based in Fès, Morocco.
+
+Its four service families are:
+1. Création de contenu & vidéos.
+2. Réseaux sociaux.
+3. Sites web & landing pages.
+4. Graphisme & motion design.
+
+Its portfolio describes:
+- Prompolu website work, including SEO and GEO.
+- Prompolu motion-design films.
+- Saraprocmaroc animated product presentation.
+
+Use those portfolio entries as content described by the supplied website. Do not invent performance results, testimonials, awards, client counts, or additional projects.
+
+The HTML references separate files:
+style.css
+app.js
+logo.svg
+media/prompolu-motion.jpg
+media/prompolu-site.jpg
+media/saraproc-film.jpg
+
+Resolve these paths relative to index.html and inspect the available project directory before building.
+
+The uploaded HTML alone does not establish the complete visual design. Do not claim to have extracted exact font families, accent colors, or layout dimensions unless the relevant stylesheets are available.
+
+BRAND AND ASSET RULES
+
+Use the original logo.svg if available.
+Preserve its lettering, proportions, spacing, colors, and geometry.
+Animate the complete logo through translation, uniform scale, and opacity.
+Do not redraw, distort, split, or morph individual logo letters.
+
+If logo.svg is unavailable:
+- Continue building the composition.
+- Use a clearly identified temporary text layer reading “promark.”
+- Isolate this layer for easy replacement.
+- Do not describe this temporary text as the original logo.
+- Identify the missing logo in the delivery notes.
+
+Preserve original client logos inside portfolio imagery.
+Do not replace Promark’s identity with Prompolu’s bronze palette.
+Prompolu is a portfolio subject in this film.
+
+Use actual portfolio assets when available.
+If media are missing, use original abstract compositions illustrating the services.
+Label these as “Concept créatif” where necessary.
+Do not present invented imagery as completed client work.
+
+Do not fetch assets from a guessed website address.
+The domain appearing in HTML metadata is not sufficient evidence that it is the final approved public address.
+Do not display a website address, email, telephone number, or social handle unless confirmed by supplied assets or explicit instructions.
+
+VISUAL DIRECTION
+
+Create a bold editorial agency film with oversized typography, confident negative space, precise alignment, restrained dimensional cards, graphic arrows, an eight-spoke asterisk, and smooth transitions motivated by the objects already on screen.
+
+Combine the reference’s expressive motion with the supplied website’s editorial hierarchy:
+short statements;
+large headlines;
+service strips;
+numbered rows;
+portfolio cards;
+a strong closing invitation.
+
+Keep the energy confident and creative.
+Use rapid transitions followed by readable holds.
+Avoid a slow slideshow of website screenshots.
+
+COLOR SYSTEM
+
+First inspect style.css and any imported stylesheets.
+If present, extract the actual background, foreground, accent, border, and typography tokens and use them consistently.
+
+If the stylesheet is unavailable, use this deliberate monochrome fallback:
+- Primary black: #000000.
+- Near-black panels: #111111.
+- Primary white: #FFFFFF.
+- Secondary text: #A8A8A8.
+- Hairline borders: #303030.
+
+This fallback is a production choice, not a claim about the missing CSS.
+
+Do not invent a colorful accent.
+Create emphasis through black/white inversion, scale, masks, rules, and motion.
+Keep original colors within portfolio imagery.
+
+TYPOGRAPHY
+
+Use the website’s actual fonts if available.
+
+Fallback:
+- Headlines: Inter Tight, weight 700.
+- Supporting copy: Inter, weight 400.
+- Labels and buttons: Inter, weight 500.
+
+At 1920 × 1080:
+- Main statements: 100–124 px.
+- Service labels: 60–72 px.
+- Section labels: 26 px, tracking 0.10em.
+- Supporting text: 38–42 px.
+- Final CTA: 46 px.
+
+Use real text layers.
+Preserve French accents and punctuation.
+Keep headline tracking around −0.035em.
+Do not apply the fallback typography to an available original logo.
+
+GRAPHIC MOTIFS FROM THE HTML
+
+ASTERISK
+Reproduce the website’s eight-spoke asterisk from its supplied SVG geometry:
+viewBox="0 0 100 100"
+path="M50 2V98M2 50H98M16 16L84 84M16 84L84 16"
+fill="none"
+stroke="currentColor"
+stroke-width="8"
+
+Use it as a recurring separator and transition device.
+It is a graphic motif, not a replacement logo.
+Rotate it briefly during transitions, then let it settle.
+Do not keep it spinning continuously.
+
+UNDERLINE
+Use the curved underline beneath “remarquée,” based on:
+viewBox="0 0 650 22"
+path="M5 17 Q290 -3 642 9"
+
+Animate its stroke with a path reveal.
+
+ARROWS
+If the CSS arrow geometry is available, reproduce it.
+Otherwise use a restrained fallback:
+3 px stroke;
+36 px shaft;
+two 14 px diagonal arrowhead strokes.
+Maintain consistent proportions.
+
+MOTION SYSTEM
+
+Use one master timeline with deterministic keyframes.
+Make each scene develop from an object in the previous scene.
+
+Use:
+- Masked text reveals.
+- Restrained character cascades.
+- Shape expansion.
+- Staggered card assembly.
+- Accelerated gallery scrolling.
+- Card selection and forward movement.
+- Frame-to-button transformation.
+- Background inversion.
+
+Limit elastic overshoot to approximately 5%.
+Keep text fully sharp during reading holds.
+Use directional motion blur only during rapid travel.
+Do not apply identical transitions to every scene.
+
+TIMELINE
+
+00.00–02.30 — OPENING STATEMENT
+
+Start on the primary background.
+
+Introduce:
+“Votre marque mérite”
+“d’être remarquée.”
+
+Use two lines, left aligned, approximately 120 px.
+Place the text within x=180–1740 and y=300–700.
+
+Reveal the first line through a rising mask.
+Introduce the second with a restrained character cascade.
+Finish all text entry by 00.90.
+
+Draw the supplied curved underline beneath “remarquée” from 00.95 to 01.35.
+Keep the full statement readable through 02.00.
+
+At the end of the sentence, let a small graphic dot detach and move toward the center.
+Use that dot to begin the next transition.
+
+02.30–03.70 — PROMARK REVEAL
+
+Expand the dot into a circle that covers the canvas.
+Invert the background and foreground colors.
+
+Reveal the original Promark logo centrally.
+Use approximately 900 px visible artwork width.
+Respect its actual proportions and internal whitespace.
+
+If using the temporary logo layer, show “promark” in a clean bold lowercase sans serif and retain the missing-logo note outside the video.
+
+Below the logo, introduce:
+“STRATÉGIE. CRÉATION. IMPACT.”
+
+Use 30 px medium-weight text with 0.10em tracking.
+Let the words appear as three overlapping rhythmic events.
+
+At 03.45, move the eight-spoke asterisk into the foreground.
+Use its scaling and movement to carry the composition into the service strip.
+
+03.70–06.50 — SERVICES IN MOTION
+
+Create an oversized horizontal service strip:
+“CONTENU”
+asterisk
+“SOCIAL MEDIA”
+asterisk
+“WEB DESIGN”
+asterisk
+“MOTION DESIGN”
+
+Use approximately 110 px typography.
+Keep the visible active label within the safe frame.
+Move the strip with controlled acceleration and short readable pauses.
+
+Suggested emphasis:
+03.70–04.35: CONTENU.
+04.35–05.00: SOCIAL MEDIA.
+05.00–05.70: WEB DESIGN.
+05.70–06.50: MOTION DESIGN.
+
+At each pause, reveal a small abstract service composition beneath the label:
+- Content: three portrait-format content cards.
+- Social media: a clean three-column publication grid.
+- Web design: a browser frame with a bold headline and clear CTA.
+- Motion design: animated type and the website’s asterisk.
+
+Treat these as editorial illustrations.
+Do not invent actual social accounts, engagement statistics, or application interfaces.
+
+06.50–08.50 — FOUR SERVICES, ONE SYSTEM
+
+Transform the strip into four numbered editorial rows.
+
+Use:
+“01 — Contenu & vidéos”
+“02 — Réseaux sociaux”
+“03 — Sites web”
+“04 — Motion design”
+
+Align row numbers at x=200.
+Align service names at x=360.
+Place a circular arrow control near x=1640.
+Use thin horizontal rules between rows.
+
+Stagger the row entrances by approximately 100 milliseconds.
+Then highlight “Sites web” and “Motion design” sequentially through foreground/background inversion.
+
+Make the final arrow expand into the next gallery frame.
+
+08.50–11.40 — PORTFOLIO GALLERY
+
+Build a moving editorial gallery from the actual project imagery:
+media/prompolu-site.jpg
+media/prompolu-motion.jpg
+media/saraproc-film.jpg
+
+Use three unequal cards with consistent gutters and restrained corners.
+Let the imagery provide the color.
+
+Use concise captions:
+“PROMPOLU — WEB”
+“PROMPOLU — MOTION”
+“SARAPROCMAROC — VIDÉO”
+
+Preserve image proportions.
+Keep logos and products readable.
+Do not crop away the subject.
+
+Begin with a short upward stagger.
+Accelerate the gallery vertically for approximately 0.45 seconds.
+Apply restrained motion blur during peak speed.
+Decelerate into a clean selected-project composition.
+
+If actual video files are available, use short silent excerpts inside the cards under the new soundtrack.
+Do not assume a file exists solely because its identifier appears in project-data.
+
+If the portfolio media are missing, substitute clearly labeled service concepts rather than fabricated client projects.
+
+11.40–13.40 — SELECTED PROJECT
+
+Bring the strongest available portfolio card toward the viewer.
+Increase it to approximately 1240 × 700 px, preserving its content.
+
+Start with a slight perspective tilt:
+approximately 7 degrees Y rotation and −4 degrees Z rotation.
+Settle nearly frontal.
+
+Display:
+“Une marque se voit.”
+
+Use large typography adjacent to or above the card.
+Keep the statement and imagery readable together.
+
+Add one small category label appropriate to the real selected asset:
+“Site web”
+or
+“Motion design”
+or
+“Vidéo animée”
+
+Do not add unverified project outcomes, ranking improvements, or revenue figures.
+
+13.40–15.40 — THE PROMARK METHOD
+
+Contract the project card into a horizontal line.
+Use the line as the foundation for a four-stage process.
+
+Display:
+“Échange”
+“Direction créative”
+“Création”
+“Mise en ligne”
+
+Arrange stages left to right with ample spacing.
+Connect them with a thin rule and small nodes.
+
+Animate the rule across the screen.
+Illuminate each node in sequence.
+Use approximately 42 px labels.
+
+This beat should communicate a clear working process, not a dense workflow diagram.
+
+At 15.20, bring the final node toward the center.
+Transform it into the closing CTA container.
+
+15.40–17.20 — INVITATION
+
+Display:
+“Votre prochaine bonne idée”
+“commence ici.”
+
+Use 88 px typography.
+Reveal the second line through a rising mask.
+
+Below it, form a rounded rectangular button:
+“Parlons de votre projet”
+
+Button dimensions:
+approximately 760 × 110 px;
+corner radius 55 px;
+46 px text;
+consistent right-pointing arrow.
+
+Present the button as a call to action.
+Do not animate a fake submitted inquiry or success confirmation.
+
+At 17.00, expand the button’s surface beyond the frame edges to introduce the final composition.
+
+17.20–20.00 — FINAL BRAND HOLD
+
+Resolve into a clean brand-colored background using the actual logo’s most readable approved treatment.
+
+Arrange:
+- Original Promark logo, centered.
+- “Des idées claires.”
+- “Des marques remarquées.”
+- Small location line: “Fès, Maroc”.
+- Closing invitation: “Parlons de votre projet”.
+
+Use a clear hierarchy:
+logo first;
+two-line brand message second;
+location and invitation third.
+
+Keep the logo artwork between approximately y=240 and y=420.
+Place the brand message around y=560.
+Place the location around y=710.
+Place the invitation around y=825.
+
+Finish movement by 17.80.
+Hold the complete frame through 20.00.
+
+Do not display a guessed domain or contact detail.
+Do not fade to black.
+Do not add a platform outro.
+
+SOUND DESIGN
+
+Use an original or appropriately licensed instrumental electronic track around 120 BPM.
+
+Mood:
+confident;
+creative;
+modern;
+rhythmic;
+controlled.
+
+Use warm bass, crisp restrained drums, short synth textures, and a clear resolution.
+No voiceover.
+
+Synchronize:
+00.00–01.35: light typography ticks and underline sweep.
+02.30: expanding-circle whoosh with a restrained low impact.
+03.70: asterisk transition accent.
+04.35, 05.00, 05.70: service-strip rhythmic accents.
+06.50–07.30: four quiet row-entry clicks.
+08.50: gallery arrival sweep.
+09.30–10.30: filtered air movement following gallery speed.
+11.40: selected-card impact.
+13.40–15.10: four small process-node ticks.
+15.40: text reveal sweep.
+17.00: broad final transition.
+17.80: musical resolution beneath the held frame.
+
+Keep sound effects subtle and integrated.
+Target approximately −16 LUFS integrated with true peak at or below −1 dBTP.
+Finish audio smoothly at exactly 20 seconds.
+
+IMPLEMENTATION AND SCOPE
+
+Inspect the available project directory and resolve asset dependencies first.
+Build the animation in a separate directory.
+Do not modify or deploy the original website.
+Do not alter its SEO metadata, navigation, project data, or JavaScript.
+
+Use the available animation framework.
+If HyperFrames is installed, follow its composition and rendering conventions.
+Keep text, icons, keyframes, media, and audio editable.
+Use local assets during rendering.
+
+Do not introduce unrelated stock-office footage, generic business handshakes, fake dashboards, fabricated testimonials, or follower-count animations.
+
+VALIDATION
+
+Inspect rendered frames from every scene.
+Verify:
+- Exactly 20 seconds and 600 frames.
+- Correct French wording and accents.
+- Logo integrity.
+- Consistent typography.
+- No missing media or broken paths.
+- Portfolio labels match the displayed project.
+- No clipping or excessive image zoom.
+- Distinct transitions.
+- Readable pauses.
+- Synchronized audio.
+- Stable final frame.
+- No unsupported business claims or guessed contact details.
+
+DELIVERABLES
+
+1. PROMARK_Motion_20s_FR.mp4.
+2. Complete editable project.
+3. Final-frame PNG.
+4. Short asset/music credits.
+5. A clear list of missing assets or temporary substitutions, if any.
+
+Render and verify the finished film when dependencies permit.
+If an essential asset or rendering capability is unavailable, provide the completed editable source and identify the exact limitation. Do not claim an MP4 was produced unless it actually exists and has been checked.
