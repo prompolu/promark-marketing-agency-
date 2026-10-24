@@ -17,4 +17,3 @@
 - Improve secondary touch targets; optionally connect the logo graph and responsive images.
 - Verify rich-result eligibility, crawl/index coverage and field CWV.
 - Research service search intent and measure actual search/AI visibility.
-
