@@ -23,9 +23,11 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
                     target += 'index.html'
                 target = posixpath.relpath(target, directory)
                 return f'{attribute}="{target}{hash_separator}{fragment}{separator}{query}"'
-            data = re.sub(r'(href|src)="([^"]*)"', rewrite, data.decode()).encode()
+            html = re.sub(r'(href|src)="([^"]*)"', rewrite, data.decode())
+            html = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex,follow">', html)
+            data = html.encode()
         elif relative.as_posix() == 'app.js':
-            data = data.decode().replace("new URL('contact/',assetRoot)", "new URL('contact/index.html',assetRoot)").encode()
+            data = data.decode().replace("new URL('contact/',assetRoot)", "new URL('contact/index.html',assetRoot)").replace('`realisations/${p.id}/`','`realisations/${p.id}/index.html`').encode()
         archive.writestr(str(Path('PROMARK-preview') / relative), data)
     archive.writestr('PROMARK-preview/OPEN-ME.txt', 'Unzip the complete archive, then open index.html in your browser. Keep the media folder with the pages. Videos play on request and include sound controls. The contact form prepares an unsent local draft. Nothing is deployed publicly.\n')
 print(f'Built {output} ({output.stat().st_size / 1_000_000:.1f} MB)')

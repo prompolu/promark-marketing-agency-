@@ -5,11 +5,21 @@ import {resolve,extname,sep} from 'node:path';
 const root=resolve('dist');
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.svg':'image/svg+xml','.xml':'application/xml','.txt':'text/plain; charset=utf-8'};
 http.createServer(async(req,res)=>{
+ res.setHeader('Referrer-Policy','strict-origin-when-cross-origin');
+ res.setHeader('X-Content-Type-Options','nosniff');
+ res.setHeader('X-Frame-Options','DENY');
+ res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'");
  try {
-  const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+  const requestURL=new URL(req.url,'http://localhost');
+  const pathname=decodeURIComponent(requestURL.pathname);
   let file=resolve(root,'.'+pathname);
   if(file!==root&&!file.startsWith(root+sep)){res.writeHead(403).end();return;}
-  if((await stat(file)).isDirectory())file=resolve(file,'index.html');
+  const isDirectory=(await stat(file)).isDirectory();
+  let canonicalPath=requestURL.pathname;
+  if(pathname.endsWith('/index.html'))canonicalPath=requestURL.pathname.slice(0,-10);
+  else if(isDirectory&&!pathname.endsWith('/'))canonicalPath+='/';
+  if(canonicalPath!==requestURL.pathname){res.writeHead(308,{Location:canonicalPath+requestURL.search}).end();return;}
+  if(isDirectory)file=resolve(file,'index.html');
   const size=(await stat(file)).size;
   const headers={'Content-Type':types[extname(file)]||'application/octet-stream','X-Content-Type-Options':'nosniff','Accept-Ranges':'bytes'};
   if(req.headers.range){
