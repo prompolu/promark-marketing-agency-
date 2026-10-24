@@ -6,3 +6,4 @@
 .button .button-label{font-size:inherit;line-height:inherit}.preview-toggle:after,.hero-preview-toggle:after{content:'';display:inline-block;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid currentColor;flex-shrink:0}.preview-toggle[aria-pressed=true]:after,.hero-preview-toggle[aria-pressed=true]:after{width:6px;height:9px;border:0;border-left:2px solid currentColor;border-right:2px solid currentColor}
 body:not([data-reactive-ready]) .preview-toggle{display:none}
 .preview-toggle:disabled,.hero-preview-toggle:disabled{opacity:.7;cursor:wait}
+.depth-floor,.hero-brand-plaque,.hero-type,.depth-ticket{pointer-events:none}
