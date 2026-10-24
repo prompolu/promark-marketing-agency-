@@ -1,8 +1,12 @@
 # Promark
 
+**Live website:** https://prompolu.github.io/promark-marketing-agency-/
+
+See [deployment verification](docs/GITHUB-PAGES-DEPLOYMENT.md) for the published build and live checks.
+
 [Download the interactive preview](https://github.com/prompolu/promark-marketing-agency-/raw/refs/heads/promark-preview/preview/PROMARK-preview.zip)
 
-Extract the ZIP, then open `PROMARK-preview/index.html`. It includes eight French pages, real case studies and client videos. The form prepares an email draft in the visitor’s mail app, with a downloadable fallback. No public deployment has been made.
+Extract the ZIP, then open `PROMARK-preview/index.html`. It includes eight French pages, real case studies and client videos. The form prepares an email draft in the visitor’s mail app, with a downloadable fallback. The website is now published on GitHub Pages; the ZIP remains an offline preview.
 
 French, responsive agency website. Eight static pages generated with Node.js; no application dependencies or external tracking.
 
@@ -48,7 +52,7 @@ The portfolio presents real client work supplied by the user: Prompolu (website,
 - All internal navigation and fragment destinations checked.
 - Desktop/mobile screenshots visually inspected. Screenshots and the executable browser check are retained in `/workspace/promark-validation/` in the cloud environment.
 
-No public deployment has been performed.
+GitHub Pages deployment is now live; see docs/GITHUB-PAGES-DEPLOYMENT.md. Earlier audit reports remain snapshots of the predeployment state.
 
 ## Portfolio media
 

@@ -1,0 +1,51 @@
+{
+  "live_url": "https://prompolu.github.io/promark-marketing-agency-/",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/services/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/realisations/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/a-propos/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/realisations/prompolu-web/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/realisations/prompolu-motion/",
+      "status": 200,
+      "canonical": true
+    },
+    {
+      "route": "/realisations/saraproc-motion/",
+      "status": 200,
+      "canonical": true
+    }
+  ],
+  "assets_checked": 15,
+  "video_range": "206 video/mp4;1024 bytes",
+  "sitemap_urls": 8,
+  "build_commit": "67ca21a2a3c045e17d8cc8f53f6a3e6e2f4be147",
+  "github_pages_status": "built",
+  "https_enforced": true
+}
