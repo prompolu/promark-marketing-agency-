@@ -20,3 +20,7 @@ Only `/preview/studio-direction/` is updated. Production and the older preview r
 ## Client-name repetition
 
 The homepage now leads with project titles, with the client named once in each project label. Repeated client names were removed from the section introduction, decorative browser bars and featured-video bar. Homepage text mentions of Prompolu decreased from 6 to 2 (excluding text inside client-supplied images/videos). Service and about copy now focuses on PROMARK; client-specific details remain in the portfolio and case studies, with accessible media descriptions and accurate project metadata preserved.
+
+## Button edge-spacing follow-up
+
+All main pill buttons use explicit 14px vertical and 24px horizontal padding, a 20px label/icon gap and a centered 16px arrow. Header controls retain their compact inset. Measured 196 rendered button instances across 12 routes and four viewport widths; label/arrow insets and vertical centering pass. Stylesheet URLs now include content hashes so a previous cached CSS response cannot hide a new spacing change. This applies to all 12 generated pages; production remains outside this review rollout.
