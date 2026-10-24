@@ -14,7 +14,7 @@ export const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;'
 const metadata={
  '':['Agence marketing à Fès : web & motion design | Promark','Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.'],
  services:['Contenu, sites web & motion design à Fès | Promark','Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.'],
- realisations:['Réalisations : Prompolu & Saraprocmaroc | Promark','Découvrez nos projets pour Prompolu et Saraprocmaroc : création de site web, accompagnement SEO et GEO, films produits et vidéos animées.'],
+ realisations:['Réalisations : sites web & motion design | Promark','Découvrez les projets de Promark : création de sites web, accompagnement SEO et GEO, films produits et vidéos animées.'],
  'a-propos':['Promark, agence créative basée à Fès au Maroc','Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.'],
  contact:['Parlons de votre projet créatif à Fès | Promark','Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.']
 };

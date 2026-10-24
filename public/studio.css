@@ -9,3 +9,57 @@
 .craft-art i:nth-child(1){--i:0}.craft-art i:nth-child(2){--i:1}.craft-art i:nth-child(3){--i:2}.craft-art i:nth-child(4){--i:3}.craft-art i:nth-child(5){--i:4}.craft-art i:nth-child(6){--i:5}.craft-art i:nth-child(7){--i:6}.craft-art i:nth-child(8){--i:7}.craft-art i:nth-child(9){--i:8}.craft-art i:nth-child(10){--i:9}.craft-art i:nth-child(11){--i:10}.craft-art i:nth-child(12){--i:11}.craft-art i:nth-child(13){--i:12}.craft-art i:nth-child(14){--i:13}.wrap{padding-inline:0}em{font-family:inherit}.contact-overlay{width:min(720px,calc(100vw - 32px));padding:28px}.contact-overlay h2{font-size:34px;margin:20px 0}.contact-overlay form{padding:20px 0 0;background:transparent}.contact-overlay .dialog-close{margin-bottom:0}.contact-overlay .form-notice{margin-top:12px}.contact-overlay .contact-links{margin-top:25px}.contact-overlay .contact-links a{padding:12px 0}.contact-overlay .contact-links span{overflow-wrap:anywhere}.contact-overlay .contact-links small{color:#b8bcaf}.contact-overlay input,.contact-overlay textarea,.contact-overlay select{background:#2a2e24}
 .page-intro h1,.case-study h2,.contact-layout h2{overflow-wrap:anywhere}.studio-copy,.studio-project-copy,.studio-service>div,.contact-layout>*{min-width:0}
 @media(max-width:400px){.page-intro h1{font-size:38px}.contact-links span{overflow-wrap:anywhere}.menu-toggle{padding-inline:14px}}
+
+/* Alignment review: shared text edges, balanced headings and consistent controls. */
+h1,h2,h3{ text-wrap:balance; }
+p{ text-wrap:pretty; }
+.page-intro,.service-detail,.service-page,.case-study,.contact-layout,
+.studio-copy,.studio-project-copy,.studio-service,.process article,
+.craft-grid article,.about-statement,.faq-section{ text-align:left; }
+.studio-intro,.studio-heading,.studio-feature,.cta-inner{ text-align:center; }
+.button.text{ padding-inline:23px; }
+.button .button-label{ line-height:1.5; }
+.breadcrumbs{ align-items:center; }
+.breadcrumbs [aria-current]{ min-width:0; }
+.answer-grid>article,.case-evidence>article,.service-detail>div{ min-width:0; }
+.process{ grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 30px;align-items:stretch; }
+.process article{ display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:18px;align-content:start; }
+.process .step,.process h3,.process p{ margin:0;max-width:none; }
+.process h3{ align-self:start; }
+.footer-bottom{ align-items:center;color:#202600; }
+footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-underline-offset:4px; }
+.contact-links>a>span:not(.sr-only){ display:block;line-height:1.6; }
+.contact-links .arrow-icon{ display:inline-block; }
+.email-help{ line-height:1.8; }
+.email-help a{ white-space:normal; }
+.client-film figcaption{ align-items:start; }
+.client-film figcaption strong{ min-width:0;line-height:1.5; }
+.client-film figcaption>span{ line-height:1.875; }
+.menu-overlay h2{ display:flex;align-items:center;min-height:44px;padding-right:14px; }
+.menu-overlay nav{ clear:both; }
+@media(min-width:761px){
+ .answer-grid h2,.answer-grid h3,.case-evidence h2{ min-height:2.4em; }
+ .service-detail{ align-items:start; }
+}
+@media(max-width:1100px) and (min-width:761px){
+ .process{ grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px; }
+ .contact-layout{ grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:30px; }
+ .contact-layout .form-grid{ grid-template-columns:1fr; }
+}
+@media(max-width:760px){
+ .cta-actions{ align-items:center;gap:14px;margin-top:28px; }
+ .cta-actions .button{ align-self:center;justify-content:center;width:100%;max-width:360px;margin-top:0; }
+ .cta-inner>p:last-child{ max-width:36ch; }
+ .process{ grid-template-columns:minmax(0,1fr); }
+ .footer-bottom{ align-items:flex-start; }
+ .breadcrumbs{ gap:6px 10px; }
+ .client-film figcaption{ grid-template-columns:minmax(0,1fr) auto;gap:8px 12px; }
+}
+@media(max-width:360px){
+ .client-film figcaption{ grid-template-columns:minmax(0,1fr); }
+ .client-film figcaption>span{ justify-self:start; }
+}
+.process .step{ display:block;width:auto;height:auto;padding:0;text-align:left;line-height:1; }
+/* Project work leads; each client remains credited once in the project label. */
+.studio-project h3.studio-project-title{font-size:clamp(30px,3.1vw,44px);line-height:1.15;letter-spacing:-.04em;color:var(--foreground);margin:24px 0 20px}
+@media(max-width:760px){.studio-project h3.studio-project-title{font-size:34px}}
