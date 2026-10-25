@@ -1,44 +1,28 @@
-# Promark: SEO and AI-search implementation review
+# Promark SEO and AI-search readiness — current review
 
-This review uses the Claude SEO technical and GEO skills. It concerns the local site and generated files, not a deployed domain. No AI visibility, ranking, traffic, or field Core Web Vitals scores were measured. No readiness score is assigned to unmeasured external platforms.
+Detailed audit and evidence: [FULL-AUDIT-REPORT.md](../prompolu.github.io-audit/FULL-AUDIT-REPORT.md).
 
-## Findings and changes
+GEO here means useful, reliable and accessible content for answer engines. It does not require a separate Google AI index, special keyword phrasing, or a promise of citations.
 
-1. **Crawlable evidence:** project details and videos previously existed only inside JavaScript dialogs. Three permanent `/realisations/<project>/` pages now render context, objectives, confirmed deliverables, media descriptions and links directly in their initial HTML. Cards are real links; JavaScript adds optional quick previews.
-2. **Entity clarity:** the homepage and About page identify Promark as a marketing and creative agency in Fès, Morocco. No invented contact details, office location, awards, staff, experience or results have been added.
-3. **Helpful explanations:** the Services page defines SEO and GEO in visible French text and links to the actual Prompolu case. GEO is described as improving clarity and accessibility for answer engines, with no promise of a citation or position.
-4. **Internal discovery:** case studies have breadcrumbs, related-project links and direct links from the homepage or portfolio. Verified work for Prompolu and Saraprocmaroc provides first-hand evidence. Project summaries remain readable without JavaScript.
-5. **Metadata and structured data:** descriptive page-specific titles/descriptions, social previews and stable per-page URL generation. Production builds include Organization, WebSite, WebPage (or appropriate page subtype), BreadcrumbList and case-study CreativeWork data matching the visible text. No commercial FAQ rich-result markup, invented ratings, Person records or unsupported VideoObject upload dates.
+## What is implemented
 
-## AI crawler access
+- Agency identity and user-confirmed email/phone/WhatsApp are consistent across visible pages and production Organization/ContactPoint schema.
+- Services and three real case studies render in initial HTML. The homepage's single portfolio button leads to a collection with ordinary case-study links.
+- Each of four service pages has a plain-language explanation and service-specific questions, with explicit scope and relevant proof links.
+- Case studies describe confirmed deliverables and show supplied films. No invented team, certifications, testimonials, address, traffic or ranking outcomes.
+- Production builds include matching canonicals, social images, Organization service catalog, service/case entity links, breadcrumbs and a twelve-page sitemap.
+- Review builds retain noindex and suppress production canonical/schema/sitemap output. Social images remain usable when sharing review links.
 
-The production robots policy uses `User-agent: *` and `Allow: /`:
+## Crawl controls and limits
 
-- Googlebot: not blocked by the generated robots policy; this supports crawling for Google Search and associated search surfaces, not a guarantee of indexing.
-- OAI-SearchBot: not blocked; ChatGPT Search crawling policy.
-- Claude-SearchBot: not blocked; Claude search crawling policy.
-- PerplexityBot: not blocked; Perplexity search crawling policy.
-- Applebot: not blocked; Apple search crawling policy.
+Only the origin-root robots.txt is authoritative. `https://prompolu.github.io/robots.txt` returns 404, which supplies no robots restrictions. Copies under the project path or nested preview do not control crawlers. Googlebot, OAI-SearchBot, Claude-SearchBot, PerplexityBot and Applebot therefore have no root robots exclusion observed; this is not proof that they crawled or indexed the site.
 
-Training-policy signals are separate: GPTBot, ClaudeBot, Google-Extended, CCBot and Applebot-Extended have no added restrictions under the generic production policy. Their status is not evidence of search citations. No training-policy preference has been changed for a live website.
+Training-policy agents GPTBot, ClaudeBot, Google-Extended, CCBot and Applebot-Extended are separate from search inclusion and were not used as search-visibility signals. No licensing preference was changed. Preview noindex addresses compliant search indexing; it is not an access-control mechanism.
 
-The user selected `https://promarketing.com` as the production origin. Normal builds now emit indexable pages with matching canonical URLs, structured-data identifiers, social-preview URLs and an eight-page sitemap. Setting `SITE_URL` to an empty string still creates a domainless noindex build. Offline ZIPs are always noindex, disallow crawling and omit the production sitemap. The domain is configured in code; DNS, ownership, TLS, deployment, live crawler responses, indexing and citations have not been independently verified.
+`llms.txt` is absent and is not treated as a ranking/citation requirement. No fabricated discovery files, AI endpoints or bulk city pages were added.
 
-## Remaining signals
+## Remaining work
 
-- **llms.txt:** not added. It is not a prerequisite for Google Search or an established citation-ranking lever.
-- **Platform visibility:** Google AI Overviews, AI Mode, ChatGPT and Perplexity visibility have not been measured. Local HTML readiness cannot establish actual citations.
-- **Brand mentions:** no independent survey of Wikipedia, Reddit, YouTube, LinkedIn or directories was performed. No profile URLs were invented.
-- **Publication dates and authors:** no artificial freshness dates or fabricated biographies added.
-- **Results:** the SEO/GEO case describes user-confirmed scope, without traffic, lead or ranking claims.
+Actual Google/ChatGPT/Claude/Perplexity visibility, rankings, backlinks, Search Console, CrUX and independent brand mentions were not measured. No access/profile details were supplied for GBP, verified social profiles or analytics. Those results cannot be inferred from source markup. Measured case outcomes and approved testimonials would strengthen first-hand evidence when supplied.
 
-## Launch actions
-
-1. Verify ownership and DNS for the user-selected `promarketing.com` domain, then confirm HTTPS on the intended host. `npm run build` generates production URLs for this origin. Publish only the production `dist/` build, not the offline ZIP.
-2. Deploy only after explicit authorisation. Ensure the static host preserves 404 status and HTTPS; the Node development server's redirect/security headers do not automatically configure another host.
-3. Public contact information is now user-confirmed and implemented in the page/footer and Organization/ContactPoint data. The form prepares an email draft to `marketingagencypromark@gmail.com`; the visitor must send it manually. A server-side email integration is needed only if automatic in-page delivery is required.
-4. Once live, verify robots/sitemap/canonicals/structured data on the actual host, then submit through the owner's Search Console/Bing tools when available. Measure field CWV and actual search/AI visibility separately.
-
-Guidance reference: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
-
-No ranking or AI citation outcomes are promised by these code changes.
+The production site remains unchanged until the user approves this review for launch. A verified domain or account-root GitHub Pages setup is needed to control origin-root robots.txt. The current project sitemap can be submitted directly through verified webmaster tools.

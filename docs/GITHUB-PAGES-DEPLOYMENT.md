@@ -1,3 +1,5 @@
+> Historical initial deployment record. Current configuration has twelve pages and is documented in SEO-VALIDATION.md. Proposed-domain statements below are superseded; the user does not own promarketing.com.
+
 # GitHub Pages deployment
 
 Live URL: https://prompolu.github.io/promark-marketing-agency-/

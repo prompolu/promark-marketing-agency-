@@ -1,0 +1,196 @@
+{
+  "pages": [
+    {
+      "route": "a-propos/index.html",
+      "title": "Promark, agence créative basée à Fès au Maroc",
+      "title_len": 45,
+      "desc_len": 155,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/a-propos/",
+      "html_bytes": 18877,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "AboutPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 525
+    },
+    {
+      "route": "contact/index.html",
+      "title": "Parlons de votre projet créatif à Fès | Promark",
+      "title_len": 47,
+      "desc_len": 153,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/contact/",
+      "html_bytes": 15604,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "ContactPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 253
+    },
+    {
+      "route": "index.html",
+      "title": "Agence marketing à Fès : web &amp; motion design | Promark",
+      "title_len": 58,
+      "desc_len": 152,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/",
+      "html_bytes": 24895,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage"
+      ],
+      "word_count_including_shared_navigation_forms": 897
+    },
+    {
+      "route": "realisations/index.html",
+      "title": "Réalisations : sites web &amp; motion design | Promark",
+      "title_len": 54,
+      "desc_len": 118,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/",
+      "html_bytes": 21700,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 327
+    },
+    {
+      "route": "realisations/prompolu-motion/index.html",
+      "title": "Motion design pour Prompolu : films produits | Promark",
+      "title_len": 54,
+      "desc_len": 137,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/prompolu-motion/",
+      "html_bytes": 20793,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 521
+    },
+    {
+      "route": "realisations/prompolu-web/index.html",
+      "title": "Prompolu : création de site web, SEO &amp; GEO | Promark",
+      "title_len": 56,
+      "desc_len": 171,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/prompolu-web/",
+      "html_bytes": 19432,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 439
+    },
+    {
+      "route": "realisations/saraproc-motion/index.html",
+      "title": "Vidéo animée pour Saraprocmaroc | Promark",
+      "title_len": 41,
+      "desc_len": 128,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/saraproc-motion/",
+      "html_bytes": 18907,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 415
+    },
+    {
+      "route": "services/creation-contenu-video/index.html",
+      "title": "Création de contenu et vidéos à Fès | Promark",
+      "title_len": 45,
+      "desc_len": 109,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/creation-contenu-video/",
+      "html_bytes": 20793,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 596
+    },
+    {
+      "route": "services/creation-site-web/index.html",
+      "title": "Création de sites web et landing pages à Fès | Promark",
+      "title_len": 54,
+      "desc_len": 99,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/creation-site-web/",
+      "html_bytes": 20812,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 617
+    },
+    {
+      "route": "services/gestion-reseaux-sociaux/index.html",
+      "title": "Gestion des réseaux sociaux à Fès | Promark",
+      "title_len": 43,
+      "desc_len": 109,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/gestion-reseaux-sociaux/",
+      "html_bytes": 20839,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 596
+    },
+    {
+      "route": "services/index.html",
+      "title": "Contenu, sites web &amp; motion design à Fès | Promark",
+      "title_len": 54,
+      "desc_len": 148,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/",
+      "html_bytes": 22165,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 783
+    },
+    {
+      "route": "services/motion-design/index.html",
+      "title": "Motion design et vidéos animées à Fès | Promark",
+      "title_len": 47,
+      "desc_len": 99,
+      "h1": 1,
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/motion-design/",
+      "html_bytes": 20691,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "word_count_including_shared_navigation_forms": 599
+    }
+  ],
+  "missing": []
+}

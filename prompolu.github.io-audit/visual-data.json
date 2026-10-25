@@ -1,0 +1,4390 @@
+{
+  "menu": {
+    "open": true,
+    "activeInside": true
+  },
+  "focusBack": true,
+  "contact": {
+    "open": true,
+    "scrollWidth": 350,
+    "clientWidth": 350,
+    "activeInside": true
+  },
+  "modal": {
+    "scrollWidth": 350,
+    "clientWidth": 350,
+    "portraitCount": 1,
+    "videos": [
+      {
+        "controls": true,
+        "muted": false,
+        "paused": true,
+        "preload": "none"
+      },
+      {
+        "controls": true,
+        "muted": false,
+        "paused": true,
+        "preload": "none"
+      },
+      {
+        "controls": true,
+        "muted": false,
+        "paused": true,
+        "preload": "none"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "route": "",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/promark-motion-design-1280.webp",
+          "alt": "Composition de motion design en 3D : ruban vert lime, anneaux et trajectoires d’animation sur fond noir.",
+          "loading": "lazy",
+          "width": 966,
+          "height": 543,
+          "intrinsicWidth": 0,
+          "intrinsicHeight": 0
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-site-640.webp",
+          "alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client.",
+          "loading": "lazy",
+          "width": 545,
+          "height": 307,
+          "intrinsicWidth": 559,
+          "intrinsicHeight": 314
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-motion-640.webp",
+          "alt": "Visuels d’architecture et de profilés dans la création animée Prompolu.",
+          "loading": "lazy",
+          "width": 479,
+          "height": 270,
+          "intrinsicWidth": 559,
+          "intrinsicHeight": 314
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-s140-360.webp",
+          "alt": "Création verticale Prompolu S140RP",
+          "loading": "lazy",
+          "width": 137,
+          "height": 244,
+          "intrinsicWidth": 160,
+          "intrinsicHeight": 284
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/saraproc-film-640.webp",
+          "alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu.",
+          "loading": "lazy",
+          "width": 545,
+          "height": 307,
+          "intrinsicWidth": 559,
+          "intrinsicHeight": 314
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "prompolu-site-640.webp",
+          "type": "img",
+          "transferSize": 18244,
+          "decodedBodySize": 17944
+        },
+        {
+          "name": "prompolu-motion-640.webp",
+          "type": "img",
+          "transferSize": 28076,
+          "decodedBodySize": 27776
+        },
+        {
+          "name": "prompolu-s140-360.webp",
+          "type": "img",
+          "transferSize": 9462,
+          "decodedBodySize": 9162
+        },
+        {
+          "name": "saraproc-film-640.webp",
+          "type": "img",
+          "transferSize": 15880,
+          "decodedBodySize": 15580
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "a-propos/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "contact/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": [
+        {
+          "tag": "A",
+          "text": "Comment sont utilisées vos informations ?",
+          "width": 246.390625,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "Écrivez-nous sur WhatsApp (nouvel onglet)",
+          "width": 157.859375,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "par email",
+          "width": 52.453125,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "marketingagencypromark@gmail.com",
+          "width": 293.765625,
+          "height": 21
+        }
+      ]
+    },
+    {
+      "route": "realisations/prompolu-web/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "prompolu-site.jpg",
+          "type": "video",
+          "transferSize": 84239,
+          "decodedBodySize": 83939
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/prompolu-motion/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "prompolu-motion.jpg",
+          "type": "video",
+          "transferSize": 114869,
+          "decodedBodySize": 114569
+        },
+        {
+          "name": "prompolu-gammes.jpg",
+          "type": "video",
+          "transferSize": 49229,
+          "decodedBodySize": 48929
+        },
+        {
+          "name": "prompolu-s140.jpg",
+          "type": "video",
+          "transferSize": 42303,
+          "decodedBodySize": 42003
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/saraproc-motion/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "saraproc-film.jpg",
+          "type": "video",
+          "transferSize": 71779,
+          "decodedBodySize": 71479
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/creation-contenu-video/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/gestion-reseaux-sociaux/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/creation-site-web/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/motion-design/",
+      "width": 1440,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1440,
+          "height": 960,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/promark-motion-design-1280.webp",
+          "alt": "Composition de motion design en 3D : ruban vert lime, anneaux et trajectoires d’animation sur fond noir.",
+          "loading": "lazy",
+          "width": 342,
+          "height": 192,
+          "intrinsicWidth": 0,
+          "intrinsicHeight": 0
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-site-640.webp",
+          "alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client.",
+          "loading": "lazy",
+          "width": 306,
+          "height": 172,
+          "intrinsicWidth": 320,
+          "intrinsicHeight": 180
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-motion-640.webp",
+          "alt": "Visuels d’architecture et de profilés dans la création animée Prompolu.",
+          "loading": "lazy",
+          "width": 269,
+          "height": 151,
+          "intrinsicWidth": 320,
+          "intrinsicHeight": 180
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-s140-360.webp",
+          "alt": "Création verticale Prompolu S140RP",
+          "loading": "lazy",
+          "width": 77,
+          "height": 137,
+          "intrinsicWidth": 160,
+          "intrinsicHeight": 284
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/saraproc-film-640.webp",
+          "alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu.",
+          "loading": "lazy",
+          "width": 306,
+          "height": 172,
+          "intrinsicWidth": 320,
+          "intrinsicHeight": 180
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "prompolu-site-640.webp",
+          "type": "img",
+          "transferSize": 18244,
+          "decodedBodySize": 17944
+        },
+        {
+          "name": "prompolu-motion-640.webp",
+          "type": "img",
+          "transferSize": 28076,
+          "decodedBodySize": 27776
+        },
+        {
+          "name": "prompolu-s140-360.webp",
+          "type": "img",
+          "transferSize": 9462,
+          "decodedBodySize": 9162
+        },
+        {
+          "name": "saraproc-film-640.webp",
+          "type": "img",
+          "transferSize": 15880,
+          "decodedBodySize": 15580
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "a-propos/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "contact/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": [
+        {
+          "tag": "A",
+          "text": "Comment sont utilisées vos informations ?",
+          "width": 246.390625,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "par email",
+          "width": 52.453125,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "marketingagencypromark@gmail.com",
+          "width": 293.765625,
+          "height": 21
+        }
+      ]
+    },
+    {
+      "route": "realisations/prompolu-web/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "prompolu-site.jpg",
+          "type": "video",
+          "transferSize": 84239,
+          "decodedBodySize": 83939
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/prompolu-motion/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "prompolu-motion.jpg",
+          "type": "video",
+          "transferSize": 114869,
+          "decodedBodySize": 114569
+        },
+        {
+          "name": "prompolu-gammes.jpg",
+          "type": "video",
+          "transferSize": 49229,
+          "decodedBodySize": 48929
+        },
+        {
+          "name": "prompolu-s140.jpg",
+          "type": "video",
+          "transferSize": 42303,
+          "decodedBodySize": 42003
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/saraproc-motion/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "saraproc-film.jpg",
+          "type": "video",
+          "transferSize": 71779,
+          "decodedBodySize": 71479
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/creation-contenu-video/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/gestion-reseaux-sociaux/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/creation-site-web/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/motion-design/",
+      "width": 390,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 390,
+          "height": 260,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/promark-motion-design-1280.webp",
+          "alt": "Composition de motion design en 3D : ruban vert lime, anneaux et trajectoires d’animation sur fond noir.",
+          "loading": "lazy",
+          "width": 272,
+          "height": 153,
+          "intrinsicWidth": 0,
+          "intrinsicHeight": 0
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-site-640.webp",
+          "alt": "Aperçu du site Prompolu dans la vidéo de lancement fournie par le client.",
+          "loading": "lazy",
+          "width": 236,
+          "height": 133,
+          "intrinsicWidth": 250,
+          "intrinsicHeight": 140
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-motion-640.webp",
+          "alt": "Visuels d’architecture et de profilés dans la création animée Prompolu.",
+          "loading": "lazy",
+          "width": 207,
+          "height": 117,
+          "intrinsicWidth": 250,
+          "intrinsicHeight": 140
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/prompolu-s140-360.webp",
+          "alt": "Création verticale Prompolu S140RP",
+          "loading": "lazy",
+          "width": 57,
+          "height": 101,
+          "intrinsicWidth": 160,
+          "intrinsicHeight": 284
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/media/saraproc-film-640.webp",
+          "alt": "Présentation des produits d’hygiène Saraproc Maroc sur fond bleu.",
+          "loading": "lazy",
+          "width": 236,
+          "height": 133,
+          "intrinsicWidth": 250,
+          "intrinsicHeight": 140
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "prompolu-site-640.webp",
+          "type": "img",
+          "transferSize": 18244,
+          "decodedBodySize": 17944
+        },
+        {
+          "name": "prompolu-motion-640.webp",
+          "type": "img",
+          "transferSize": 28076,
+          "decodedBodySize": 27776
+        },
+        {
+          "name": "prompolu-s140-360.webp",
+          "type": "img",
+          "transferSize": 9462,
+          "decodedBodySize": 9162
+        },
+        {
+          "name": "saraproc-film-640.webp",
+          "type": "img",
+          "transferSize": 15880,
+          "decodedBodySize": 15580
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "a-propos/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "contact/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": [
+        {
+          "tag": "A",
+          "text": "Comment sont utilisées vos informations ?",
+          "width": 246.390625,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "par email",
+          "width": 52.453125,
+          "height": 16
+        }
+      ]
+    },
+    {
+      "route": "realisations/prompolu-web/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "prompolu-site.jpg",
+          "type": "video",
+          "transferSize": 84239,
+          "decodedBodySize": 83939
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/prompolu-motion/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "prompolu-motion.jpg",
+          "type": "video",
+          "transferSize": 114869,
+          "decodedBodySize": 114569
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "prompolu-gammes.jpg",
+          "type": "video",
+          "transferSize": 49229,
+          "decodedBodySize": 48929
+        },
+        {
+          "name": "prompolu-s140.jpg",
+          "type": "video",
+          "transferSize": 42303,
+          "decodedBodySize": 42003
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "realisations/saraproc-motion/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "saraproc-film.jpg",
+          "type": "video",
+          "transferSize": 71779,
+          "decodedBodySize": 71479
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/creation-contenu-video/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/gestion-reseaux-sociaux/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/creation-site-web/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    },
+    {
+      "route": "services/motion-design/",
+      "width": 320,
+      "errors": [],
+      "overflow": false,
+      "h1": 1,
+      "images": [
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 134,
+          "height": 89,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 1536,
+          "height": 1024,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        },
+        {
+          "src": "http://localhost:3080/promark-marketing-agency-/preview/studio-direction/logo.svg",
+          "alt": "Promark",
+          "loading": "auto",
+          "width": 320,
+          "height": 213,
+          "intrinsicWidth": 2048,
+          "intrinsicHeight": 1365
+        }
+      ],
+      "resourceBytes": [
+        {
+          "name": "space-grotesk.woff2",
+          "type": "link",
+          "transferSize": 26924,
+          "decodedBodySize": 26624
+        },
+        {
+          "name": "reactive.css?v=651174f913c0",
+          "type": "link",
+          "transferSize": 11015,
+          "decodedBodySize": 10715
+        },
+        {
+          "name": "studio.css?v=30dffdb03165",
+          "type": "link",
+          "transferSize": 21243,
+          "decodedBodySize": 20943
+        },
+        {
+          "name": "style.css?v=28fdf9045289",
+          "type": "link",
+          "transferSize": 35366,
+          "decodedBodySize": 35066
+        },
+        {
+          "name": "app.js?v=ccafb43a7a77",
+          "type": "script",
+          "transferSize": 5803,
+          "decodedBodySize": 5503
+        },
+        {
+          "name": "studio.js?v=47e57130e658",
+          "type": "script",
+          "transferSize": 3577,
+          "decodedBodySize": 3277
+        },
+        {
+          "name": "logo.svg",
+          "type": "img",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        },
+        {
+          "name": "contact.js?v=e1a114cddba1",
+          "type": "script",
+          "transferSize": 5163,
+          "decodedBodySize": 4863
+        },
+        {
+          "name": "effects.js?v=c72f458f8e8e",
+          "type": "script",
+          "transferSize": 8353,
+          "decodedBodySize": 8053
+        },
+        {
+          "name": "ibm-plex-mono.woff2",
+          "type": "css",
+          "transferSize": 37496,
+          "decodedBodySize": 37196
+        },
+        {
+          "name": "logo.svg",
+          "type": "other",
+          "transferSize": 3702,
+          "decodedBodySize": 3402
+        }
+      ],
+      "fonts": "loaded",
+      "bodyFont": "\"Space Grotesk\", Arial, sans-serif",
+      "landmarks": {
+        "main": 1,
+        "header": 1
+      },
+      "focusable": []
+    }
+  ]
+}

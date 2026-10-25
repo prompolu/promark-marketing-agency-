@@ -1,0 +1,163 @@
+{
+  "summary": {
+    "health_score": 88,
+    "score_scope": "Heuristic production-build readiness excluding intentional review noindex; not ranking/indexing/AI visibility",
+    "business_type": "Creative and marketing agency, Fès, Morocco",
+    "top_findings": [
+      "Preview noindex must remain until launch approval",
+      "Origin-root robots missing; nested project files are not authoritative",
+      "Four service explanations/FAQs improved",
+      "Measured link-label/mailto warning and mobile initialization fixed",
+      "External authority/indexation/AI citation evidence unavailable"
+    ],
+    "quick_wins": [
+      "Service definitions and FAQs",
+      "Service entity/catalog links",
+      "Review social images",
+      "WOFF2 fonts and preload",
+      "Corrected robots/domain documentation"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 90,
+      "weight": 22,
+      "findings": [
+        {
+          "severity": "Medium",
+          "title": "Origin-root crawler configuration",
+          "description": "Nested robots files are non-authoritative; root robots currently returns 404.",
+          "recommendation": "Submit sitemap via verified webmaster tools; configure root controls only with appropriate root/domain access."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 80,
+      "weight": 23,
+      "findings": [
+        {
+          "severity": "Medium",
+          "title": "Independent evidence remains limited",
+          "description": "No measured outcomes, approved quotes or verified profiles supplied.",
+          "recommendation": "Add only genuine owner-approved evidence."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 92,
+      "weight": 20,
+      "findings": [
+        {
+          "severity": "Info",
+          "title": "Twelve-page checks pass",
+          "description": "Unique titles/descriptions, one H1 and working links/fragments verified.",
+          "recommendation": "Maintain these checks after changes."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 90,
+      "weight": 10,
+      "findings": [
+        {
+          "severity": "Info",
+          "title": "Production graph verified internally",
+          "description": "Service/catalog/case links and canonical sitemap agree.",
+          "recommendation": "Validate with external rich-result tools after launch if eligible features are added."
+        }
+      ]
+    },
+    {
+      "name": "Performance",
+      "score": 100,
+      "weight": 10,
+      "findings": [
+        {
+          "severity": "Info",
+          "title": "Fresh mobile lab result",
+          "description": "Performance/accessibility/best practices 100; LCP 1.26s, TBT 0ms, CLS 0.",
+          "recommendation": "Monitor field CWV after launch; do not equate lab TBT with field INP."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 82,
+      "weight": 10,
+      "findings": [
+        {
+          "severity": "Medium",
+          "title": "Platform visibility unmeasured",
+          "description": "No Google or answer-engine index/citation data available.",
+          "recommendation": "Verify indexation and observe actual citations after approved launch."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 94,
+      "weight": 5,
+      "findings": [
+        {
+          "severity": "Info",
+          "title": "Responsive assets available",
+          "description": "WebP images with alt text/dimensions; current social image and smaller fonts.",
+          "recommendation": "Preserve responsive/lazy media handling."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Implemented",
+        "items": [
+          "Content/metadata/schema improvements",
+          "Measured accessibility and performance fixes",
+          "Preview protection and validation"
+        ]
+      },
+      {
+        "name": "Owner-dependent launch",
+        "items": [
+          "Approve production rollout separately",
+          "Verify Search Console/Bing and submit sitemap",
+          "Supply approved case outcomes, testimonials and real profiles",
+          "Configure origin-root crawler controls only on an owned root/domain"
+        ]
+      }
+    ]
+  },
+  "performance": {
+    "before_run": 40236912659,
+    "after_run": 40237243246,
+    "url": "https://prompolu.github.io/promark-marketing-agency-/preview/studio-direction/",
+    "before": {
+      "performance": 83,
+      "accessibility": 100,
+      "best_practices": 77,
+      "seo": 63,
+      "lcp_ms": 1940.565,
+      "tbt_ms": 574,
+      "cls": 0
+    },
+    "after": {
+      "performance": 100,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 63,
+      "lcp_ms": 1263.721,
+      "tbt_ms": 0,
+      "cls": 0
+    },
+    "note": "Two synthetic mobile homepage runs; not a controlled experiment or field CWV. SEO 63 is explained by intentional preview noindex. No remaining failing scored SEO audit other than is-crawlable."
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

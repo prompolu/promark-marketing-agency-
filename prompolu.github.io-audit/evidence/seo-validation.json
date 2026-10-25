@@ -1,0 +1,109 @@
+{
+  "productionBuildPages": 12,
+  "productionIndexable": true,
+  "uniqueMetadata": true,
+  "sitemapMatches": true,
+  "localLinksAndFragmentsValid": true,
+  "serviceDefinitionsAndQuestions": 4,
+  "previewNoindex": true,
+  "previewSocialImage": true,
+  "errors": [],
+  "pages": [
+    {
+      "route": "/a-propos/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/a-propos/",
+      "title": "Promark, agence créative basée à Fès au Maroc",
+      "description": "Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/contact/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/contact/",
+      "title": "Parlons de votre projet créatif à Fès | Promark",
+      "description": "Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/",
+      "title": "Agence marketing à Fès : web &amp; motion design | Promark",
+      "description": "Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/realisations/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/",
+      "title": "Réalisations : sites web &amp; motion design | Promark",
+      "description": "Découvrez les projets de Promark : création de sites web, accompagnement SEO et GEO, films produits et vidéos animées.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/realisations/prompolu-motion/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/prompolu-motion/",
+      "title": "Motion design pour Prompolu : films produits | Promark",
+      "description": "Motion design · Films produits pour Prompolu : Film de présentation, animation « Nos gammes » et une création verticale autour du S140RP.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/realisations/prompolu-web/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/prompolu-web/",
+      "title": "Prompolu : création de site web, SEO &amp; GEO | Promark",
+      "description": "Site web · SEO · GEO pour Prompolu : Création du site web, accompagnement SEO (référencement naturel) et GEO (optimisation pour les moteurs de réponse et les outils d’IA).",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/realisations/saraproc-motion/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/realisations/saraproc-motion/",
+      "title": "Vidéo animée pour Saraprocmaroc | Promark",
+      "description": "Vidéo animée · Présentation produits pour Saraprocmaroc : Vidéo animée de 60 secondes avec musique et présentation des produits.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/services/creation-contenu-video/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/creation-contenu-video/",
+      "title": "Création de contenu et vidéos à Fès | Promark",
+      "description": "Des visuels, carrousels et vidéos pour présenter vos produits et votre activité avec une direction cohérente.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/services/creation-site-web/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/creation-site-web/",
+      "title": "Création de sites web et landing pages à Fès | Promark",
+      "description": "Un site qui explique votre offre, fonctionne sur mobile et donne un prochain pas clair au visiteur.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/services/gestion-reseaux-sociaux/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/gestion-reseaux-sociaux/",
+      "title": "Gestion des réseaux sociaux à Fès | Promark",
+      "description": "Une présence organisée autour de votre activité, avec une ligne éditoriale et des livrables définis ensemble.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/services/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/",
+      "title": "Contenu, sites web &amp; motion design à Fès | Promark",
+      "description": "Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.",
+      "structuredData": true,
+      "oneH1": true
+    },
+    {
+      "route": "/services/motion-design/",
+      "canonical": "https://prompolu.github.io/promark-marketing-agency-/services/motion-design/",
+      "title": "Motion design et vidéos animées à Fès | Promark",
+      "description": "Des textes, produits et éléments graphiques mis en mouvement pour donner du rythme à votre message.",
+      "structuredData": true,
+      "oneH1": true
+    }
+  ]
+}

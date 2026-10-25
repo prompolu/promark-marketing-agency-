@@ -1,0 +1,24 @@
+{
+  "before_run": 40236912659,
+  "after_run": 40237243246,
+  "url": "https://prompolu.github.io/promark-marketing-agency-/preview/studio-direction/",
+  "before": {
+    "performance": 83,
+    "accessibility": 100,
+    "best_practices": 77,
+    "seo": 63,
+    "lcp_ms": 1940.565,
+    "tbt_ms": 574,
+    "cls": 0
+  },
+  "after": {
+    "performance": 100,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 63,
+    "lcp_ms": 1263.721,
+    "tbt_ms": 0,
+    "cls": 0
+  },
+  "note": "Two synthetic mobile homepage runs; not a controlled experiment or field CWV. SEO 63 is explained by intentional preview noindex. No remaining failing scored SEO audit other than is-crawlable."
+}
