@@ -66,7 +66,7 @@ footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-under
 /* Keep a physical inset around every pill label and arrow on every route. */
 .button:not(.nav-cta){padding:14px 24px;column-gap:20px;align-items:center;max-width:100%;box-sizing:border-box;}
 .button>.button-label{min-width:0;line-height:1.5;}
-.button>.arrow-icon{flex:0 0 16px;width:16px;height:16px;align-self:center;}
+.button>.arrow-icon{flex:0 0 20px;width:20px;height:20px;align-self:center;}
 
 /* Project dialogs: explicit tracks keep links, copy and galleries aligned. */
 #project-dialog{padding:32px;width:min(900px,calc(100vw - 40px));max-height:88dvh;scroll-padding-block:24px;}
@@ -80,11 +80,11 @@ footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-under
 .dialog-details p{line-height:1.7;overflow-wrap:break-word;}
 .project-actions{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:start;}
 .project-actions .inline-link{gap:12px;align-items:center;min-height:48px;padding:10px 0;margin:0;max-width:100%;}
-.project-actions .arrow-icon{flex:0 0 16px;}
+.project-actions .arrow-icon{flex:0 0 20px;}
 #dialog-content>.client-films{margin:0;gap:28px;}
 #dialog-content>.button{justify-self:start;}
 .inline-link{align-items:center;column-gap:14px;max-width:100%;line-height:1.5;}
-.inline-link>.arrow-icon{flex:0 0 16px;align-self:center;}
+.inline-link>.arrow-icon{flex:0 0 20px;align-self:center;}
 .service-detail .inline-link{margin-right:0;}
 .service-detail>div:last-child>.button{display:flex;width:fit-content;margin-top:20px;}
 .filters{align-items:center;}
