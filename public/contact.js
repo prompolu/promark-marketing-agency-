@@ -1,4 +1,10 @@
 (() => {
+ // Keep the campaign tag of the link a visitor arrived from (e.g. an Instagram bio link) for this tab only.
+ const sourceKey='promark-source';
+ const clean=value=>(value||'').toLowerCase().replace(/[^a-z0-9_.-]/g,'').slice(0,40);
+ const params=new URLSearchParams(location.search);
+ const arrival=['utm_source','utm_medium','utm_campaign'].map(key=>clean(params.get(key))).filter(Boolean);
+ try{if(clean(params.get('utm_source')))sessionStorage.setItem(sourceKey,arrival.join(' / '));}catch{}
  const form=document.querySelector('#contact-form');
  if(!form)return;
  form.noValidate=true;
@@ -38,7 +44,8 @@
   busy(true);status.textContent='Transmission de votre demande…';
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),15000);
   try{
-   const response=await fetch(contact.formEndpoint,{method:'POST',headers:{Accept:'application/json','Content-Type':'application/json'},body:JSON.stringify({...draft.values,_subject:('Projet Promark — '+draft.values.company).replace(/[\r\n]/g,' '),_gotcha:''}),signal:controller.signal});
+   let source='';try{source=sessionStorage.getItem(sourceKey)||'';}catch{}
+   const response=await fetch(contact.formEndpoint,{method:'POST',headers:{Accept:'application/json','Content-Type':'application/json'},body:JSON.stringify({...draft.values,...(source?{source}:{}),_subject:('Projet Promark — '+draft.values.company).replace(/[\r\n]/g,' '),_gotcha:''}),signal:controller.signal});
    const result=await response.json().catch(()=>null);
    if(!response.ok||result?.ok!==true)throw new Error(response.status===429?'rate-limit':'rejected');
    status.textContent='Votre demande a été transmise au service de réception de Promark. Merci pour votre message.';
