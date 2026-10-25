@@ -116,3 +116,4 @@ footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-under
 .privacy-note h2{font-size:28px;line-height:1.25;margin-bottom:22px;}
 .privacy-note p{max-width:75ch;color:var(--muted);overflow-wrap:anywhere;}
 .privacy-note a{color:var(--foreground);text-decoration:underline;text-underline-offset:3px;}
+.note>a[href$="#confidentialite"]{display:inline-flex;min-height:44px;align-items:center;text-decoration:underline;text-underline-offset:3px;}
