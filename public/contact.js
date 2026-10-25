@@ -54,4 +54,6 @@
   const a=document.createElement('a');a.href=url;a.download='demande-projet-promark.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   status.textContent='Votre fichier a été préparé. Envoyez-le à '+contact.email+'. Aucune demande n’a été envoyée automatiquement.';
  });
+ // Enable draft actions only after the submit handler is attached.
+ submit.disabled=false;form.querySelector('.download-draft').disabled=false;
 })();

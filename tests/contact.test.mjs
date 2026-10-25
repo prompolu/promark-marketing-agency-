@@ -10,7 +10,8 @@ test('Direct submission accepts only the owner’s public Formspree endpoint',()
 });
 test('Missing endpoint keeps an honest, functional email fallback',()=>{
  const html=renderContactForm({contact,services,escapeHTML});
- assert(html.includes('action="mailto:marketingagencypromark@gmail.com"'));
+ assert(!html.includes('action="mailto:'));assert(html.includes('type="submit" disabled'));
+ assert(html.includes('<noscript>'));assert(html.includes('href="mailto:marketingagencypromark@gmail.com"'));
  assert(html.includes('Préparer mon email'));assert(!html.includes('Envoyer ma demande'));
  assert(html.includes('Télécharger ma demande'));assert(html.includes('https://wa.me/212684681567'));
  assert(!html.includes('novalidate'));assert(html.includes('aria-live="polite"'));
