@@ -117,3 +117,24 @@ footer .footer-contacts a:hover{ color:#000;text-decoration:underline;text-under
 .privacy-note p{max-width:75ch;color:var(--muted);overflow-wrap:anywhere;}
 .privacy-note a{color:var(--foreground);text-decoration:underline;text-underline-offset:3px;}
 .note>a[href$="#confidentialite"]{display:inline-flex;min-height:44px;align-items:center;text-decoration:underline;text-underline-offset:3px;}
+
+/* Consistent hanging indents keep every continuation line on the text edge. */
+.deliverables li{position:relative;padding:10px 0 10px 24px;line-height:1.7;}
+.deliverables li::before{position:absolute;left:0;top:10px;width:12px;margin:0;line-height:inherit;text-align:left;}
+/* Shared row tracks align captions and controls when portfolio titles wrap. */
+.portfolio-section .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 30px;}
+.portfolio-section .project{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:18px;padding-bottom:32px;min-width:0;}
+.portfolio-section .project-open{display:grid;grid-template-rows:subgrid;grid-row:span 2;row-gap:18px;min-width:0;}
+.portfolio-section .project-caption{margin:0;min-width:0;align-self:start;}
+.portfolio-section .project-caption>span:first-child{min-width:0;}
+.portfolio-section .project>p{margin:0;line-height:1.6;align-self:start;}
+.portfolio-section .preview-toggle{margin:0;justify-self:start;align-self:start;}
+/* A fixed icon track prevents long FAQ questions pushing into the toggle. */
+.faqs summary{display:grid;grid-template-columns:minmax(0,1fr) 20px;column-gap:18px;align-items:center;line-height:1.5;}
+.faqs summary>span{justify-self:end;}
+.faqs details>p{margin-top:18px;line-height:1.7;text-align:left;}
+@media(max-width:760px){
+ .portfolio-section .project-grid{grid-template-columns:minmax(0,1fr);}
+ .portfolio-section .project{padding-bottom:22px;}
+ .portfolio-section .project-caption strong{line-height:1.25;}
+}

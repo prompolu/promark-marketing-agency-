@@ -1,0 +1,58 @@
+[
+  {
+    "width": 1440,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  },
+  {
+    "width": 1024,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  },
+  {
+    "width": 768,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  },
+  {
+    "width": 430,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  },
+  {
+    "width": 390,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  },
+  {
+    "width": 375,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  },
+  {
+    "width": 320,
+    "portfolioRowsAligned": true,
+    "hangingIndents": true,
+    "filter": true,
+    "dialog": true,
+    "faq": true
+  }
+]
