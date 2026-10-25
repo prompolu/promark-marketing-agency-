@@ -1,4 +1,4 @@
-name: Live site performance audit
+name: Preview performance audit
 on:
   workflow_dispatch:
 permissions:
@@ -12,18 +12,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Measure the live mobile site
+      - name: Measure the review build on mobile
         env:
-          SITE_TO_AUDIT: https://prompolu.github.io/promark-marketing-agency-/
+          SITE_TO_AUDIT: https://prompolu.github.io/promark-marketing-agency-/preview/studio-direction/
         run: |
           mkdir -p reports
           export CHROME_PATH="$(command -v google-chrome)"
           npx --yes lighthouse@13.5.0 "$SITE_TO_AUDIT" --chrome-flags="--headless=new --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --form-factor=mobile --output=json --output=html --output-path=reports/lighthouse --quiet
-      - name: Retain the measured reports
+      - name: Retain measured reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: promark-mobile-lighthouse
+          name: promark-preview-lighthouse
           path: reports/
           if-no-files-found: error
           retention-days: 30

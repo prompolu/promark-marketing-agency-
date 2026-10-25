@@ -6,7 +6,7 @@ import {createReadStream} from 'node:fs';
 import {resolve,extname,sep} from 'node:path';
 const root=resolve('dist');
 const basePath=deploymentBasePath(process.env.SITE_BASE_PATH ?? (process.env.SITE_URL===undefined?siteConfig.basePath:''));
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.svg':'image/svg+xml','.xml':'application/xml','.txt':'text/plain; charset=utf-8'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.svg':'image/svg+xml','.xml':'application/xml','.txt':'text/plain; charset=utf-8','.webp':'image/webp','.woff2':'font/woff2'};
 http.createServer(async(req,res)=>{
  res.setHeader('Referrer-Policy','strict-origin-when-cross-origin');
  res.setHeader('X-Content-Type-Options','nosniff');
