@@ -1,3 +1,6 @@
 dist/
 node_modules/
 .env
+# Fetched by npm run assets (pinned, checksum-verified)
+public/vendor/
+public/fonts/

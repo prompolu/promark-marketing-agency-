@@ -1,6 +1,12 @@
 name: Deploy to GitHub Pages
 on:
   workflow_dispatch:
+    inputs:
+      target:
+        description: 'preview publishes a noindex review copy at /preview/pillar/; live replaces the public site (promark-preview branch only)'
+        type: choice
+        options: [preview, live]
+        default: preview
 permissions:
   contents: write
 concurrency:
@@ -10,7 +16,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      TARGET: ${{ inputs.target }}
     steps:
+      - name: Only promark-preview can go live
+        if: inputs.target == 'live' && github.ref_name != 'promark-preview'
+        run: |
+          echo "The live site is deployed from promark-preview only; this run is on $GITHUB_REF_NAME." >&2
+          exit 1
       - name: Check out the source
         uses: actions/checkout@v4
       - name: Set up Node
@@ -21,6 +34,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Fetch pinned fonts and Three.js
+        run: npm run assets
       - name: Check and test
         run: |
           npm run check
@@ -28,21 +43,31 @@ jobs:
       - name: Build for the project-site path
         env:
           SITE_URL: https://prompolu.github.io
-          SITE_BASE_PATH: /promark-marketing-agency-
-        run: npm run build
+        run: |
+          if [ "$TARGET" = live ]; then export SITE_BASE_PATH=/promark-marketing-agency-; else export SITE_BASE_PATH=/promark-marketing-agency-/preview/pillar; fi
+          npm run build
+      # The review copy must never compete with the live pages in search results.
+      - name: Keep the review copy out of search results
+        if: inputs.target == 'preview'
+        run: |
+          find dist -name '*.html' -exec sed -i 's/content="index,follow,max-image-preview:large"/content="noindex,nofollow"/' {} +
+          rm -f dist/sitemap.xml dist/robots.txt
+          ! grep -rl 'content="index,follow' dist --include='*.html'
       - name: Check out gh-pages
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
-      # Overwrites the generated site files but keeps everything else on gh-pages, such as the preview/ folders.
+      # Live: copies the build over gh-pages and keeps everything else, such as the preview/ folders.
+      # Preview: replaces only preview/pillar/.
       - name: Publish the build over gh-pages
         run: |
-          cp -R dist/. gh-pages/
+          if [ "$TARGET" = live ]; then DEST=gh-pages; else DEST=gh-pages/preview/pillar; rm -rf "$DEST"; mkdir -p "$DEST"; fi
+          cp -R dist/. "$DEST"/
           touch gh-pages/.nojekyll
           cd gh-pages
           git add -A
           git status --short
           if git diff --cached --quiet; then echo "Nothing to publish."; exit 0; fi
-          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Deploy Promark static website to GitHub Pages (${GITHUB_SHA::7})"
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Deploy Promark static website ($TARGET) from $GITHUB_REF_NAME (${GITHUB_SHA::7})"
           git push origin HEAD:gh-pages
