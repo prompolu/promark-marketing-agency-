@@ -30,7 +30,7 @@ export const projectHeadings={
 };
 export const projectDescriptions={
  'prompolu-web':'Comment Promark a créé le site de Prompolu, spécialiste des profilés aluminium, et accompagné son référencement SEO et GEO pour Google et les outils d’IA.',
- 'prompolu-motion':'Quatre créations animées pour Prompolu : film de marque, animation « Nos gammes » et deux formats verticaux autour du profilé S140RP. Voir les vidéos.',
+ 'prompolu-motion':'Trois créations animées pour Prompolu : film de marque, animation « Nos gammes » et une composition verticale autour du profilé S140RP. Voir les vidéos.',
  'saraproc-motion':'Une vidéo animée de 60 secondes, avec musique, pour présenter les produits d’hygiène Saraproc Maroc. Découvrez le projet et le film réalisé par Promark.'
 };
 export function pageMetadata(slug,fallbackTitle,fallbackDescription){const id=slug.split('/').at(-1);return metadata[slug]||[projectTitles[id]||`${fallbackTitle} | Promark`,projectDescriptions[id]||fallbackDescription];}
