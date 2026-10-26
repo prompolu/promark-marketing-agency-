@@ -12,18 +12,28 @@ export function deploymentBasePath(value='') {
 }
 export const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const metadata={
- '':['Agence marketing à Fès : web & motion design | Promark','Promark, agence marketing et créative à Fès : création de contenu, réseaux sociaux, sites web et motion design. Découvrez nos projets et notre approche.'],
- services:['Contenu, sites web & motion design à Fès | Promark','Création de contenu et vidéos, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Périmètre défini ensemble, prestations sur devis.'],
- realisations:['Réalisations : Prompolu & Saraprocmaroc | Promark','Découvrez nos projets pour Prompolu et Saraprocmaroc : création de site web, accompagnement SEO et GEO, films produits et vidéos animées.'],
- 'a-propos':['Promark, agence créative basée à Fès au Maroc','Découvrez l’approche Promark : une agence marketing à Fès, des livrables définis, une identité cohérente et une collaboration directe avec les entreprises.'],
- contact:['Parlons de votre projet créatif à Fès | Promark','Préparez votre demande pour Promark : contenu, réseaux sociaux, site web ou motion design. Décrivez votre activité, vos objectifs et le service souhaité.']
+ '':['Agence marketing digital à Fès : web & vidéo | Promark','Promark, agence marketing digital à Fès : création de contenu, gestion des réseaux sociaux, sites web et motion design. Parlons de votre projet.'],
+ services:['Services marketing à Fès : contenu, web & vidéo | Promark','Création de contenu, gestion des réseaux sociaux, sites vitrines et motion design à Fès. Un périmètre défini ensemble, sur devis. Découvrez nos services.'],
+ realisations:['Réalisations : sites web & vidéos animées | Promark','Les projets de Promark à Fès : site web et SEO/GEO pour Prompolu, films produits en motion design et vidéo animée pour Saraprocmaroc. Voir les projets.'],
+ 'a-propos':['À propos de Promark, agence marketing à Fès','Promark, agence marketing et création à Fès : des livrables définis, une identité cohérente et un dialogue direct avec les entreprises. Notre approche.'],
+ contact:['Contact et devis : agence marketing à Fès | Promark','Contenu, réseaux sociaux, site web ou motion design : décrivez votre activité et votre objectif. Contactez Promark par formulaire, e-mail ou WhatsApp.']
 };
 export const projectTitles={
- 'prompolu-web':'Prompolu : création de site web, SEO & GEO | Promark',
- 'prompolu-motion':'Motion design pour Prompolu : films produits | Promark',
- 'saraproc-motion':'Vidéo animée pour Saraprocmaroc | Promark'
+ 'prompolu-web':'Prompolu : site web, SEO et GEO | Étude de cas Promark',
+ 'prompolu-motion':'Prompolu : films produits en motion design | Promark',
+ 'saraproc-motion':'Saraprocmaroc : vidéo animée produits | Promark'
 };
-export function pageMetadata(slug,fallbackTitle,fallbackDescription){return metadata[slug]||[projectTitles[slug.split('/').at(-1)]||`${fallbackTitle} | Promark`,fallbackDescription];}
+export const projectHeadings={
+ 'prompolu-web':'Prompolu : création du site web et accompagnement SEO/GEO',
+ 'prompolu-motion':'Prompolu : films produits en motion design',
+ 'saraproc-motion':'Saraprocmaroc : vidéo animée de présentation produits'
+};
+export const projectDescriptions={
+ 'prompolu-web':'Comment Promark a créé le site de Prompolu, spécialiste des profilés aluminium, et accompagné son référencement SEO et GEO pour Google et les outils d’IA.',
+ 'prompolu-motion':'Quatre créations animées pour Prompolu : film de marque, animation « Nos gammes » et deux formats verticaux autour du profilé S140RP. Voir les vidéos.',
+ 'saraproc-motion':'Une vidéo animée de 60 secondes, avec musique, pour présenter les produits d’hygiène Saraproc Maroc. Découvrez le projet et le film réalisé par Promark.'
+};
+export function pageMetadata(slug,fallbackTitle,fallbackDescription){const id=slug.split('/').at(-1);return metadata[slug]||[projectTitles[id]||`${fallbackTitle} | Promark`,projectDescriptions[id]||fallbackDescription];}
 export function seoHead({origin,slug,title,description,project,service}){
  const canonical=origin?`${origin}/${slug?slug+'/':''}`:'';
  const imagePath=project?`/media/${project.poster}.jpg`:'/social/cover.jpg';
