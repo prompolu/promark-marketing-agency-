@@ -56,7 +56,7 @@ GitHub Pages deployment is now live; see docs/GITHUB-PAGES-DEPLOYMENT.md. Earlie
 
 ## Portfolio media
 
-`scripts/projects.mjs` is the shared source for the three case studies and six videos. Client video sources were supplied directly by the user. Exact duplicate uploads were removed; both distinct S140RP edits are retained. Original source files are preserved in the cloud attachments, while H.264/AAC browser copies and JPEG posters live in `public/media/`. Landscape clips are limited to 1280px wide and portrait clips to 720px wide, keeping their aspect ratios. The supplied 4K site-launch clip has a web rendition; the source is not overwritten.
+`scripts/projects.mjs` is the shared source for the three case studies and five videos. Client video sources were supplied directly by the user. Exact duplicate uploads were removed. The second S140RP edit (`prompolu-s140-variation`) was also removed from the case study: it repeats the first edit's scenes and differs only in its ending. Its media files stay in `public/media/` but are no longer referenced. Original source files are preserved in the cloud attachments, while H.264/AAC browser copies and JPEG posters live in `public/media/`. Landscape clips are limited to 1280px wide and portrait clips to 720px wide, keeping their aspect ratios. The supplied 4K site-launch clip has a web rendition; the source is not overwritten.
 
 One earlier Saraprocmaroc upload exceeded the 32 MiB transfer limit and was not included. The supplied 60-second Saraproc Maroc file is included. No unverified SEO/GEO performance claims are made.
 
