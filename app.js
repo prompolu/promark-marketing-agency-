@@ -22,7 +22,7 @@
  // Only one video plays at a time.
  document.addEventListener('play', e => { if (e.target.tagName === 'VIDEO') document.querySelectorAll('video').forEach(v => { if (v !== e.target) v.pause(); }); }, true);
 
- // Dot-grid tiles behind the hero and the footer wordmark.
+ // Dot-grid tiles behind the hero and the footer logo.
  document.querySelectorAll('.hero-tiles,.footer-tiles').forEach((container, seed) => {
   [[2, 26], [34, 30], [70, 26]].forEach(([top, height], r) => {
    let left = -4 + hash(seed, r, 1) * 6;
@@ -41,7 +41,7 @@
  const posterObserver = new IntersectionObserver(entries => entries.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add('is-in'); posterObserver.unobserve(e.target); }
  }), { threshold: .25 });
- document.querySelectorAll('.poster,.case-poster').forEach(poster => {
+ document.querySelectorAll('.poster').forEach(poster => {
   const holder = poster.querySelector('.slices') || poster.appendChild(Object.assign(document.createElement('span'), { className: 'slices' }));
   for (let i = 0; i < 6; i++) {
    const s = document.createElement('span');
@@ -52,15 +52,9 @@
   if (reduced) poster.classList.add('is-in'); else posterObserver.observe(poster);
  });
 
- // The method film plays muted only while it is on screen.
- const film = document.querySelector('.film-frame video');
- if (film) {
-  if (reduced) film.controls = true;
-  else new IntersectionObserver(([e]) => { e.isIntersecting ? film.play().catch(() => {}) : film.pause(); }, { threshold: .4 }).observe(film);
- }
  if (reduced) document.querySelectorAll('.illo').forEach(svg => svg.pauseAnimations && svg.pauseAnimations());
 
- // Block-wipe headings: a solid block runs ahead of each line and reveals it, tied to scroll.
+ // Block-wipe headings: a solid block runs ahead of each line and reveals it, once, as the heading comes into view.
  const wipes = [];
  function splitIntoLines(el) {
   const text = el.dataset.text || el.textContent.trim().replace(/\s+/g, ' ');
@@ -99,31 +93,27 @@
    line.style.setProperty('--trail', clamp(local * 1.35 - .35).toFixed(4));
   });
  }
+ function play(w) {
+  const start = performance.now() + (w.intro ? 400 : 0);
+  (function step(now) { w.p = clamp((now - start) / 1300); setLines(w.lines, w.p); if (w.p < 1) requestAnimationFrame(step); })(start);
+ }
  function initWipes() {
   if (reduced) return;
-  // Headings already on screen at load play once on a timer; the others follow scroll position.
+  // Headings already on screen at load (or above it) play straight away; the others play when they enter the viewport.
+  // Timed rather than scroll-scrubbed, so a heading is never left half covered when the reader stops scrolling.
   document.querySelectorAll('[data-wipe]').forEach(el => wipes.push({ el, intro: el.dataset.wipe === 'intro' || el.getBoundingClientRect().top < innerHeight * .85, lines: splitIntoLines(el), p: 0 }));
   wipes.forEach(w => setLines(w.lines, 0));
-  wipes.filter(w => w.intro).forEach(w => {
-   const start = performance.now() + 400;
-   (function play(now) { w.p = clamp((now - start) / 1300); setLines(w.lines, w.p); if (w.p < 1) requestAnimationFrame(play); })(start);
-  });
-  const onScroll = () => {
-   const vh = innerHeight;
-   wipes.forEach(w => {
-    if (w.intro) return;
-    const r = w.el.getBoundingClientRect();
-    const p = clamp((vh * .95 - r.top) / (vh * .45 + r.height * .4));
-    if (Math.abs(p - w.p) > .001) { w.p = p; setLines(w.lines, p); }
-   });
-  };
-  addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: true });
-  onScroll();
+  const observer = new IntersectionObserver(entries => entries.forEach(e => {
+   if (!e.isIntersecting) return;
+   observer.unobserve(e.target);
+   play(wipes.find(w => w.el === e.target));
+  }), { rootMargin: '0px 0px -12% 0px' });
+  wipes.forEach(w => w.intro ? play(w) : observer.observe(w.el));
   let width = innerWidth;
   addEventListener('resize', () => {
    if (innerWidth === width) return;
    width = innerWidth;
-   wipes.forEach(w => { w.lines = splitIntoLines(w.el); setLines(w.lines, w.intro ? 1 : w.p); });
+   wipes.forEach(w => { w.lines = splitIntoLines(w.el); setLines(w.lines, w.p); });
   });
  }
  (document.fonts ? document.fonts.ready : Promise.resolve()).then(initWipes);
