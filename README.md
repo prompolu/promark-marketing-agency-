@@ -30,7 +30,7 @@ The local server listens on port 3000 (`PORT` overrides it). Re-run the build af
 - `scripts/illustrations.mjs`: halftone SVG illustrations for the four services.
 - `scripts/fetch-assets.mjs`: downloads the pinned fonts and Three.js into `public/` and verifies their SHA-256.
 - `public/style.css`: brand tokens, components and responsive styling.
-- `public/app.js`: pill menu, portfolio filters, scroll-driven heading wipes, poster reveals and video handling.
+- `public/app.js`: pill menu, portfolio filters, heading wipes that play once as each heading comes into view, poster reveals and video handling.
 - `public/stone.js`: homepage 3D stone (Three.js, loaded as a module on the homepage only).
 - `public/logo.svg`: original supplied SVG, unchanged.
 
