@@ -30,15 +30,16 @@ The local server listens on port 3000 (`PORT` overrides it). Re-run the build af
 - `scripts/illustrations.mjs`: halftone SVG illustrations for the four services.
 - `scripts/fetch-assets.mjs`: downloads the pinned fonts and Three.js into `public/` and verifies their SHA-256.
 - `public/style.css`: brand tokens, components and responsive styling.
-- `public/app.js`: pill menu, portfolio filters, heading wipes that play once as each heading comes into view, poster reveals and video handling.
-- `public/stone.js`: homepage 3D stone (Three.js, loaded as a module on the homepage only).
+- `public/app.js`: pull-tab menu, portfolio filters, word-by-word heading reveals and the "slap-on" entrance of taped photos, cards and notes (each plays once), video handling.
+- `public/scene3d.js`: every real-time 3D object on the site (Three.js, built from code with no model files): the homepage tape roll and its floating objects, one object per service, and the 3D pieces on the inner pages.
+- `public/paper.svg`, `public/paper-dark.svg`: crumpled-paper textures for the light and dark sections.
 - `public/logo.svg`: original supplied SVG, unchanged.
 
 ## Brand
 
 Exact SVG colour: **#000000**. The supplied vector is a black silhouette with transparent lettering, rather than the lime artwork seen in the raster reference. It is displayed over **#D7FF00**, a visual approximation from that reference, not a pixel-extracted brand specification. The image proportions and artwork remain intact; only empty exterior canvas is clipped by its navigation container.
 
-The site uses the "Pillar" direction: ink **#131419** and paper **#F2F2F6** sections, graphite surfaces, and the lime accent **#D7FF00**. Type is Geist and Geist Mono (SIL Open Font License), fetched at build time with `npm run assets`. No authorised standalone brand icon was provided, so no invented favicon is included.
+The site uses the "Sticky" direction, inspired by the playful packaging-site style of sweet-tape.com: crumpled-paper sections in lime **#D7FF00**, ink **#131419**, orange **#FF6A13** and cream **#F6F0E2**, with kraft cards, tape strips, sticky notes, round stickers, tape marquees and curved section edges. Display type is Anton, handwritten notes use Caveat, and body text uses Geist and Geist Mono (all SIL Open Font License, fetched and checksum-verified at build time with `npm run assets`). No authorised standalone brand icon was provided, so no invented favicon is included.
 
 ## Launch requirements
 
@@ -114,7 +115,7 @@ Optional owner-supplied Search Console and Bing verification values can be provi
 
 ## Interactive features
 
-The homepage hero is a faceted stone rendered in real time with Three.js (`public/stone.js`): it follows the pointer, can be spun by dragging, and stops rendering off screen. Without WebGL the hero keeps its dot-grid tiles and type. Headings use a scroll-driven block wipe and service cards use halftone SVG illustrations (`scripts/illustrations.mjs`); reduced-motion users get static, fully revealed content.
+Everything 3D is rendered in real time with Three.js (`public/scene3d.js`). The homepage hero is a Promark tape roll: it unrolls as you scroll and spins when dragged. Around it float a 3D heart, an asterisk, a content stack and an orbit. Each service has its own object: a content stack, a speech bubble, a browser window and an orbit. The services overview shows all four together. About has a bouncing location pin, contact has a paper plane, case studies have a play card, and the CTA and 404 page have an asterisk. Each object leans toward the pointer and only renders while on screen. Without WebGL, the halftone SVG illustrations (`scripts/illustrations.mjs`) and simple CSS shapes are shown instead. Reduced-motion users get still frames and static, fully revealed content.
 
 An on-demand `Live site performance audit` GitHub Actions workflow measures the public mobile site with pinned Lighthouse13.5.0 and saves JSON/HTML artifacts. These are lab results; Google Search Console/CrUX indexing and field measurements still require the owner's account/eligible traffic.
 
